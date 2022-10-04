@@ -1,0 +1,13 @@
+.btn {
+    @include border-radius(0);
+}
+
+.btn_transparent {
+    border: solid 1px $white;
+    background-color: transparent;
+    color: $white;
+    &:hover {
+        color: $white;
+        font-weight: $semi-bold;
+    }
+}

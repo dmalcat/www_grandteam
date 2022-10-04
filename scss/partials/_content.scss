@@ -1,0 +1,60 @@
+.content_detail {
+    @include transparentBg($black, 0.4);
+    padding-left: 15px;
+    padding-right: 15px;
+    color: $white;
+    h1 {
+        margin-top: 15px;
+        color: $white;
+    }
+    .detail_title {
+        @extend .title;
+    }
+    .detail_img {
+        max-height: 300px;
+        overflow: hidden;
+        img {
+            margin-top: -32%;
+        }
+    }
+    .content_text {
+        @include transparentBg($black, 0.7);
+        padding: 15px 15px;
+        margin-bottom: 30px;
+    }
+    .detail_text {
+        color: $white;
+    }
+}
+
+.pagination {
+    li {
+        a, span {
+            background-color: transparent;
+            border: none;
+            color: $black;
+            padding-left: 2px;
+            padding-right: 2px;
+            &:hover {
+                background-color: transparent;
+                font-weight: bold;
+                color: $black;
+            }
+        }
+
+    }
+    li.active {
+        a, span {
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+            color: $black;
+            &:hover {
+                background-color: transparent;
+                font-weight: bold;
+                color: $black;
+            }
+        }
+
+    }
+}

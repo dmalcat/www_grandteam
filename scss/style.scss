@@ -1,0 +1,215 @@
+@import "partials/_mixins.scss";
+@import "partials/_variables.scss";
+@import "partials/_colors.scss";
+@import "partials/_normalize.scss";
+@import "partials/_buttons.scss";
+@import "partials/_navbar.scss";
+@import "partials/_menu.scss";
+@import "partials/_item.scss";
+@import "partials/_detail.scss";
+@import "partials/_gallery.scss";
+@import "partials/_content.scss";
+@import "partials/_responsive.scss";
+@import "partials/_carousel.scss";
+@import "partials/_fb.scss";
+
+
+html {
+    /*background-color: $white;*/
+}
+body {
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Cambay', sans-serif;
+
+    font-weight: 300;
+    /*background-color: $white;*/
+    font-size: 15pt;
+    /*line-height: 1.8em;*/
+}
+
+.wrap {
+    background-image: url("/images/bg/gray/80/Praha_3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    /*-webkit-background-size: cover;*/
+    background-size: cover;
+    /*    -webkit-transition: background 3s ease-in-out;
+        -moz-transition: background 3s ease-in-out;
+        -o-transition: background 3s ease-in-out;
+        transition: background 3s ease-in-out;*/
+    -webkit-transition: background 3s ease-in-out;
+    -moz-transition: background 3s ease-in-out;
+    -o-transition: background 3s ease-in-out;
+    transition: background 3s ease-in-out;
+}
+
+.title {
+    color: $black;
+    font-weight: 600;
+
+}
+
+a {
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+a.scrolltop {
+    line-height: 1.2em;
+    font-size: 30pt;
+}
+
+h1 {
+    font-size: 25pt;
+    color: $black;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-size: 27pt;
+    font-weight: $light;
+    color: $black;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.65em;
+}
+
+.header {
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*@include maintain-ratio(4 2.2);*/
+    /*position: fixed;*/
+    /*height: 100vh;*/
+    height: 620px;
+    /*-webkit-filter: grayscale(100%);*/
+    /*filter: gray;*/
+
+}
+
+.homepage {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    .item {
+        a {
+            color: $white;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        .wrap {
+            border-bottom-left-radius: 30px;
+            /*@include transparentBg($gray-dark, 0.3);*/
+            transition: all .9s ease-out;
+            @include maintain-ratio(4 2.5);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 15px;
+            background-size: cover;
+            border: solid 1px $gray;
+            &:before {
+                @include transparentBg($blue, 0.5);
+                position: absolute;
+                content:" ";
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                z-index:0;
+            }
+
+            h2 {
+                position: absolute;
+                font-size: 15pt;
+                color: $white;
+                font-weight: $semi-bold;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-58%);
+                white-space: nowrap;
+                @include transparentBg($black, 0.4);
+                width: 100%;
+                text-align: center;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .content {
+                position: absolute;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                /*@include transparentBg($gray-dark, 0.8);*/
+                @include transparentBg($blue, 0.8);
+                transition: 1s;
+                padding: 10px;
+                color: $white;
+                text-align: center;
+                .clanky {
+                    margin-top: 5px;
+                    line-height: 0.9em;
+                    font-size: 13pt;
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                h2 {
+                    display: none;
+                }
+                .content {
+                    transition: 1s;
+                    left: 0;
+                }
+            }
+        }
+    }
+    &.aktuality {
+        .wrap {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+.kontaktni_formular {
+    color: $green;
+    /*background-color: $gray-light-light;*/
+    @include transparentBg($black, 0.7);
+    @include border-radius(5px);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    label {
+        font-size: 12pt;
+        color: $white;
+    }
+}
+img.logo {
+    -webkit-filter:
+        drop-shadow(1px 1px 0 white)
+        /*drop-shadow(-1px 1px 0 white)*/
+        drop-shadow(1px -1px 0 white)
+        /*drop-shadow(-1px -1px 0 white);*/
+        ;
+
+    filter:
+        drop-shadow(1px 1px 0 white)
+        /*drop-shadow(-1px 1px 0 white)*/
+        drop-shadow(1px -1px 0 white)
+        /*drop-shadow(-1px -1px 0 white);*/
+}
+
+#image-holder {
+    /*height: 100px;*/
+}
+
+#preload-01 { background: url(/images/bg/gray/Praha_1.jpg) no-repeat -9999px -9999px; }
+#preload-02 { background: url(/images/bg/gray/Praha_2.jpg) no-repeat -9999px -9999px; }
+#preload-03 { background: url(/images/bg/gray/Praha_3.jpg) no-repeat -9999px -9999px; }
+#preload-04 { background: url(/images/bg/gray/Praha_4.jpg) no-repeat -9999px -9999px; }

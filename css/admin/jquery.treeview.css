@@ -1,0 +1,134 @@
+.treeview, .treeview ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	float: left;
+	width:220px;
+}
+.treeview ul {
+	margin-top: 2px;
+}
+.treeview .hitarea {
+	background: url(/images/admin/treeview-famfamfam.png) -64px -25px no-repeat;
+	_background: url(/images/admin/treeview-famfamfam.gif) -64px -25px no-repeat;
+	height: 15px;
+	width: 15px;
+	float: left;
+	margin-top: 3px;
+	cursor: pointer;
+}
+* html .hitarea {
+	display: inline;
+	float: none;
+}
+.treeview li {
+	margin: 0;
+	padding: 0px;
+	width: 220px;
+	float: left;
+	margin-bottom: 1px;
+}
+.treeview li a {
+	color: #242424;
+	padding:2px 5px;
+	margin-left: 18px;
+  display: block;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+}
+.treeview li a.ext {
+  padding-left: 17px;
+}
+.treeview li.collapsable ul {
+	margin: 0px;
+	margin-bottom: 4px;
+	padding: 0px;
+}
+.treeview li.collapsable ul li {
+	margin: 0px;
+	padding: 0px;
+	width: 220px;
+	border: 0px;
+}
+
+
+.treeview li.collapsable ul li a, .treeview li.expandable ul li a {
+	color: #242424;
+	padding:2px 5px;
+	padding-left: 18px;
+	margin-left: 18px;
+	font-weight: normal;
+	display: block;
+	font-size: 13px;
+}
+.treeview li.collapsable ul li.collapsable ul li a, .treeview li.collapsable ul li.expandable ul li a {
+	color: #242424;
+	padding:2px 5px;
+	padding-left: 33px;
+	margin-left: 18px;
+	display: block;
+	font-size: 13px;
+}
+.treeview li.collapsable a, .treeview li.collapsable ul li.collapsable a {
+	color: #12A142;
+}
+#treecontrol {
+	margin: 1em 0;
+	display: none;
+}
+.treeview .hover {
+	cursor: pointer;
+}
+.treeview .expandable-hitarea {
+	background-position: -80px -1px;
+}
+.treeview li.last {
+	background-position: 0 -1766px
+}
+.treeview-famfamfam .hitarea {
+	background-image: url(/images/admin/treeview-famfamfam.png);
+}
+.filetree li {
+	padding: 3px 0 2px 16px;
+}
+.filetree span.folder, .filetree span.file {
+	padding: 1px 0 1px 16px;
+	display: block;
+}
+.filetree span.folder {
+	background: url(/images/menu/folder.gif) 0 0 no-repeat;
+}
+.filetree li.expandable span.folder {
+	background: url(/images/menu/folder-closed.gif) 0 0 no-repeat;
+}
+.filetree span.file {
+	background: url(/images/menu/file.gif) 0 0 no-repeat;
+}
+/******vlastni***/
+
+.treeview li.collapsable a.selected {
+	color: #fff;
+	background-color: #12A142 ;
+}
+.treeview li ul li a.selected {
+	color: #fff;
+	background-color: #12A142 ;
+}
+.treeview li.collapsable ul li.collapsable ul li a.selected {
+	color: #fff !important;
+	background-color: #12A142 ;
+}
+.treeview a.selected:hover, .treeview li.collapsable ul li a.selected:hover {
+	color: #fff !important;
+}
+.treeview li a:hover, .treeview li.collapsable ul li a:hover, .treeview li.collapsable li.collapsable ul li a:hover {
+	color: #12A142 !important;
+	text-decoration: underline;
+}
+ .treeview a.selected {
+	color: #fff !important;
+	background-color: #12A142;
+
+}

@@ -1,0 +1,35 @@
+@import "compass";
+
+.scrolltop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    @include border-radius(10px);
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-family: 'Sans-serif';
+    font-size: 3em;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.75);
+    color: darken(white, 30%);
+    @include box-shadow(0px 0px 5px 2px darken(white, 40%));
+    visibility: hidden;
+    opacity: 0;
+    @include transition(0.5s);
+    &:visited {
+        color: darken(white, 30%);
+    }
+    &:hover {
+        text-decoration: none;
+        color: white;
+    }
+    &:focus {
+        text-decoration: none;
+    }
+    &.active {
+        visibility: visible;
+        opacity: 1;
+    }
+}

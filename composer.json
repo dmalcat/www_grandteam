@@ -1,0 +1,8 @@
+{
+    "require": {
+        "tracy/tracy": "^2.5",
+        "dibi/dibi": "^4.0",
+        "gumlet/php-image-resize": "^1.8",
+        "phpmailer/phpmailer": "^6.0"
+    }
+}
