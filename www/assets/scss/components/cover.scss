@@ -2,6 +2,7 @@
 
 .cover {
 	position: relative;
+	margin-bottom: 0;
 	.cover__image {
 		display: block;
 		max-width: 1920px;
@@ -24,19 +25,20 @@
 
 	h1 {
 		font-size: $hero-font-size;
-		color: $black;
-		margin-bottom: 1rem;
+		color: $white;
+		margin-bottom: 60px;
 		text-align: center;
+		font-weight: 400;
 		@media screen and (max-width: 1270px) {
-			font-size: $hero-font-size - 0.5rem;
+			//font-size: $hero-font-size -10%;
 		}
 
 		@media screen and (max-width: 830px) {
-			font-size: $hero-font-size - 1rem;
+			//font-size: $hero-font-size - 20%;
 		}
 
 		@include max375px {
-			font-size: $hero-font-size - 0.5rem;
+			//font-size: $hero-font-size - 0.5rem;
 		}
 	}
 

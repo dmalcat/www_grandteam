@@ -1,0 +1,48 @@
+@import '../config';
+
+.articles {
+	padding-top: 120px;
+	.articles__row {
+		flex-flow: unset;
+		margin-bottom: 120px;
+	}
+
+	.articles__row--blue {
+		.articles__col--copy {
+			margin: 20px 0;
+			background-color: $light-blue;
+		}
+
+		h1 {
+			color: $blue;
+		}
+	}
+
+	h1 {
+		font-size: 1.5rem;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+
+	p {
+		color: #2c2c2c;
+	}
+
+	.articles__col {
+		width: 50%;
+	}
+
+	.articles__col--copy {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+
+		padding: 45px 90px;
+		box-sizing: border-box;
+	}
+
+	.articles__image {
+		display: block;
+		width: 100%;
+	}
+}

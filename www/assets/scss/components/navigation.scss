@@ -28,6 +28,8 @@
 	}
 
 	.navigation__link {
+		font-size: 18px;
+		text-decoration: none;
 		@extend .trans;
 	}
 }
@@ -63,7 +65,7 @@
 		.navigation__link {
 			display: block;
 			width: 100%;
-			font-size: 1.25rem;
+			font-size: 20px;
 			color: $hamburger-overlay-item-color;
 		}
 	}

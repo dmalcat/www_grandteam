@@ -1,0 +1,48 @@
+@import '../config';
+
+.news {
+	background-color: $light-blue;
+	margin-bottom: 0;
+	padding: 60px 0;
+	.news__wrapper {
+		max-width: 1600px;
+	}
+
+	.news__row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.news__item--center {
+	}
+
+	.news__inner {
+		position: relative;
+	}
+
+	.news__image {
+		display: block;
+		max-width: 500px;
+		width: 100%;
+		border-radius: 10px;
+	}
+
+	.news__content {
+		display: flex;
+		position: absolute;
+		top: 0; bottom: 0;
+		left: 0; right: 0;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		h1 {
+			text-align: center;
+			font-size: 30px;
+			font-weight: 400;
+			color: $white;
+		}
+	}
+}

@@ -3,7 +3,7 @@ $grid-max-width: 90rem;
 
 
 // Spaces
-$section-gutter: 4rem;
+$section-gutter: 120px;
 
 
 // Typography
@@ -12,7 +12,7 @@ $base-line-height: 1.5;
 
 $base-paragraph-size: 1rem;
 
-$hero-font-size: 4rem;
+$hero-font-size: 60px;
 $h1-font-size: 3rem;
 $h2-font-size: 2.25rem;
 $h3-font-size: 1.75rem;
@@ -32,7 +32,12 @@ $black: #000;
 
 $base-text-color: $white;
 
+$light-blue: #f0f8ff;
 $blue: #0277ff;
+
+$light-gray: #8a8a8a;
+$gray: #8a8a8a;
+
 
 
 // Forms

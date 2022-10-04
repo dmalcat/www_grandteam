@@ -53,6 +53,12 @@ final class RouterFactory
 					'action' 		=> 'default',
 					'region' 		=> $region
 				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
 			}
 
 		} else {

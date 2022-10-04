@@ -24,3 +24,11 @@
 		background-color: darken($blue, 10%);
 	}
 }
+
+.button--white {
+	background-color: $white;
+	color: $blue;
+	&:hover {
+		//background-color: darken($blue, 10%);
+	}
+}
