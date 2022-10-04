@@ -14,6 +14,11 @@
 
 	.navigation__item {
 		margin: 0 1rem;
+		&:hover {
+			.navigation__link {
+				color: $blue;
+			}
+		}
 	}
 
 	.navigation__item--active {
@@ -22,7 +27,9 @@
 		}
 	}
 
-	.navigation__link {}
+	.navigation__link {
+		@extend .trans;
+	}
 }
 
 .navigation--mobile {

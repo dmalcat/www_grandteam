@@ -23,6 +23,7 @@ $underlined-links: true;
 
 // Fonts
 $fonts-path: '../../fonts/';
+$font-roboto: 'Montserrat', sans-serif;
 
 
 // Colors
@@ -30,6 +31,8 @@ $white: #FFF;
 $black: #000;
 
 $base-text-color: $white;
+
+$blue: #0277ff;
 
 
 // Forms
@@ -50,7 +53,7 @@ $form-input-text-color: $black;
 
 // Common radius
 $base-radius: 0.5rem;
-$button-radius: 0.5rem;
+$button-radius: 15px;
 
 // Header
 $header-bg-color: $white;
