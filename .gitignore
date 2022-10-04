@@ -1,0 +1,18 @@
+# app folders
+/logs/*
+!/logs/.htaccess
+/temp/*
+!/temp/.htaccess
+!/temp/sessions/
+/temp/sessions/*
+!/temp/sessions/.htaccess
+/vendor/*
+!/vendor/.htaccess
+
+# image repositories
+/images/*
+!/storage/images/.htaccess
+/www/storage/images/*
+!/www/storage/images/empty.txt
+/www/storage/attachments/*
+!/www/storage/attachments/empty.txt
