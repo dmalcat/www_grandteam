@@ -65,6 +65,12 @@ final class RouterFactory
 					'action' 		=> 'default',
 					'region' 		=> $region
 				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/subpage', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'subpage',
+					'region' 		=> $region
+				]);
 			}
 
 		} else {

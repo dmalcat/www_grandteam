@@ -9,4 +9,7 @@ use Nette;
 
 final class InsurancePresenter extends BasePresenter
 {
+    public function actionSubpage() {
+        $this->template->title = $this->getParameter('title');
+    }
 }

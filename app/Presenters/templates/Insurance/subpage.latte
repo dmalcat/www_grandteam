@@ -1,0 +1,136 @@
+{block content}
+
+
+<section class="cover">
+	<div class="cover__visual">
+		<div class="cover__visual-inner">
+			<picture class="cover__image">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover-subpage.png" media="(max-width: 1920px)" type="image/png">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
+				{*}
+				<img src="{$basePath}/assets/images/content/cover/cover-subpage.png" alt="">
+			</picture>
+		</div>
+	</div>
+
+	<div class="cover__wrapper wrapper">
+		<h1 n:block=title>
+			{$title}
+		</h1>
+		<div class="cover__button">
+			<a class="button button--blue" href="#kontaktujte-nas">Sjednat</a>
+		</div>
+	</div>
+</section>
+
+<section class="articles articles--content">
+	<div class="articles__wrapper wrapper">
+		<div class="articles__block articles__block--perex">
+			<div class="articles__row articles__row--blue row">
+				<div class="articles__col articles__col--copy">
+					<h1>Pojištění nemovitosti</h1>
+					<h2>Pojištění, které kryje škody na Vaší nemovitosti</h2>
+					<p>
+						Zajímají Vás investice a spoření? Chcete se zajistit na důchod,
+						založit spoření pro děti nebo se jen dozvědět, jaké možnosti spoření a investování jsou pro Vás ty nejlepší? Podívejte se na náš jednoduchý přehled, který Vám s orientací v této oblasti jistě pomůže.
+					</p>
+				</div>
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/assets/images/content/insurance-placeholder.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="articles__block">
+			<h3>Předmětem pojištění nemovitosti jsou:</h3>
+			<ul>
+				<li>Rodinný dům</li>
+				<li>Bytový/činžovní dům</li>
+				<li>Byt v osobním vlastnictví</li>
+				<li>Rekreační objekt</li>
+				<li>Chata/chalupa</li>
+				<li>Garáž</li>
+				<li>Půdní vestavba</li>
+				<li>Stavební materiál, stroje i nářadí</li>
+				<li>Související objekty (bazén, skleník, studna, kůlna, plot)</li>
+				<li>Nově zahájená stavba (rodinného i bytového domu)</li>
+				<li>Atd…
+			</ul>
+		</div>
+
+		<div class="articles__block">
+			<h3>Na jaká rizika lze nemovitost pojistit:</h3>
+			<ul>
+				<li>Požár, výbuch, úder blesku, zřícení letounu</li>
+				<li>Voda z vodovodního zařízení</li>
+				<li>Vichřice nebo krupobití</li>
+				<li>Vystoupání vody z odpadního potrubí</li>
+				<li>Krádež, vloupání, loupež</li>
+				<li>Povodeň, záplava</li>
+				<li>Náhlý sesuv hornin a zemin nebo zřícení laviny</li>
+				<li>Tíha sněhu</li>
+				<li>Pád stromů, stožárů a jiných předmětů</li>
+				<li>Náraz vozidla nebo jeho nákladu</li>
+				<li>Zemětřesení</li>
+				<li>Mráz na topném systému a vodovodním zařízení</li>
+				<li>Rázová vlna způsobená nadzvukovými letadly</li>
+				<li>Kouř</li>
+				<li>Vandalismus</li>
+				<li>Rozbití skla z jiné příčiny než pojištěným rizikem</li>
+				<li>Atd…</li>
+			</ul>
+		</div>
+
+		<div class="articles__block articles__block--perex">
+			<div class="articles__row articles__row--blue row">
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/assets/images/content/insurance-placeholder-2.png" alt="">
+				</div>
+				<div class="articles__col articles__col--copy">
+					<h1>Pojištění domácnosti</h1>
+					<h2>Pojištění, které kryje škody na Vaší nemovitosti</h2>
+					<p>
+						Pojištění, které kryje škody na věcech, které jsou součástí domácnosti a jejího vybavení Domácnost je soubor movitých věcí, nacházející se v místě pojištění. Jedná se o vybavení domácnosti (např. nábytek, kuchyňská linka, elektronika, cennosti, audiovizuální technika, aj.) a nemusí být pevně namontované k nemovitosti jako takové.
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+
+{include '../includes/form.latte'}
+
+<section class="articles articles--hp">
+	<div class="articles__wrapper wrapper">
+		<div class="articles__row articles__row--blue row">
+			<div class="articles__col articles__col--image">
+				<img class="articles__image" src="{$basePath}/assets/images/content/articles/hp-2.png" alt="">
+			</div>
+			<div class="articles__col articles__col--copy">
+				<h1>Chcete začít spořit?</h1>
+				<p>
+					Zajímají Vás investice a spoření? Chcete se zajistit na důchod,
+					založit spoření pro děti nebo se jen dozvědět, jaké možnosti spoření a investování jsou pro Vás ty nejlepší? Podívejte se na náš jednoduchý přehled, který Vám s orientací v této oblasti jistě pomůže.
+				</p>
+				<div>
+					<a href="" class="button button--blue">Číst dál</a>
+				<div>
+			</div>
+		</div>
+</section>
+
