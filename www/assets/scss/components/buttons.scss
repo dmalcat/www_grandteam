@@ -1,0 +1,34 @@
+@import '../config';
+@import '../core/breakpoints';
+
+.button {
+	display: inline-flex;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.25;
+	border-radius: $button-radius;
+	cursor: pointer;
+	padding: 20px 40px;
+	@extend .trans;
+	@include max940px {
+		display: block;
+	}
+}
+
+.button--blue {
+	background-color: $blue;
+	color: $white;
+	&:hover {
+		background-color: darken($blue, 10%);
+	}
+}
+
+.button--white {
+	background-color: $white;
+	color: $blue;
+	&:hover {
+		//background-color: darken($blue, 10%);
+	}
+}

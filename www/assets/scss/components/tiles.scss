@@ -1,0 +1,64 @@
+@import '../config';
+
+.tiles {
+	position: relative;
+	margin-top: -60px;
+	z-index: 100;
+	margin-bottom: 0;
+	.tiles__wrapper {
+		padding-bottom: 120px;
+		border-bottom: 1px solid #c7c6c6;
+	}
+
+	.tiles__row {
+		gap: 60px;
+		justify-content: center;
+	}
+}
+
+.tile {
+	background-color: $light-blue;
+	max-width: 350px;
+	width: 100%;
+	padding: 45px 60px;
+	border-radius: 15px;
+	box-sizing: border-box;
+	text-align: center;
+	text-decoration: none;
+
+	.tile__icon {
+		display: block;
+		max-width: 75px;
+		margin: 0 auto 1rem;
+	}
+
+	.tile__headline {
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: $black;
+	}
+
+	.tile__copy {
+		color: $light-gray;
+	}
+
+	.tile__link {
+		font-weight: bold;
+		color: $blue;
+		text-decoration: none;
+	}
+}
+
+.tile--blue {
+	background-color: $blue;
+
+	.tile__headline,
+	.tile__copy,
+	.tile__link {
+		color: $white;
+	}
+}
+
+.tile--center {
+	transform: translateY(-30px);
+}

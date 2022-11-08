@@ -1,0 +1,51 @@
+@import '../config';
+
+.header {
+	position: relative;
+	background-color: $header-bg-color;
+	padding: 40px 20px;
+	@media screen and (max-width: $hamburger-breakpoint) {
+		z-index: 1010;
+	}
+
+	.header__wrapper {}
+
+	.header__row {
+		display: flex;
+	}
+
+	.header__row--logo {
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	.header__row--nav {
+		justify-content: flex-end;
+	}
+
+	.button {
+		text-transform: uppercase;
+	}
+}
+
+.headerLogo {
+	.headerLogo__image {
+		max-width: 170px;
+		width: 100%;
+
+	}
+}
+
+.headerSearch {
+	.headerSearch__input {
+		margin-right: 30px;
+	}
+}
+
+.headerNavigation {
+	.navigation {
+		@media screen and (max-width: $hamburger-breakpoint) {
+			display: none;
+		}
+	}
+}

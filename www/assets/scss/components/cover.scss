@@ -1,0 +1,48 @@
+@import '../config';
+
+.cover {
+	position: relative;
+	margin-bottom: 0;
+	.cover__image {
+		display: block;
+		max-width: 1920px;
+		width: 100%;
+		margin: 0 auto;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.cover__wrapper {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	h1 {
+		font-size: $hero-font-size;
+		color: $white;
+		margin-bottom: 60px;
+		text-align: center;
+		font-weight: 400;
+		@media screen and (max-width: 1270px) {
+			//font-size: $hero-font-size -10%;
+		}
+
+		@media screen and (max-width: 830px) {
+			//font-size: $hero-font-size - 20%;
+		}
+
+		@include max375px {
+			//font-size: $hero-font-size - 0.5rem;
+		}
+	}
+
+	.cover__copy {
+		margin-bottom: 2rem;
+	}
+}

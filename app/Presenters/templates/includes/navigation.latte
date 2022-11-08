@@ -1,0 +1,28 @@
+<nav class="navigation">
+	<ul class="navigation__list">
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Insurance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Insurance:">Pojištění</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Finance:">Financování</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Finance:">Investování a spoření</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Finance:">Ostatní služby</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Finance:">O nás</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Finance:">Partneři</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Finance:">Aktuality</a>
+		</li>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Styleguide:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Styleguide:">Styleguide</a>
+		</li>
+	</ul>
+</nav>

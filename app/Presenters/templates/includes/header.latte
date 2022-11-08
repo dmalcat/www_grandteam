@@ -1,0 +1,28 @@
+<header class="header">
+	<div class="header__wrapper wrapper">
+		<div class="header__row header__row--logo">
+			<div class="headerLogo">
+				<a class="headerLogo__link" n:href="Homepage:">
+					<img class="headerLogo__image" src="{$basePath}/assets/images/brand/logo.png" alt="">
+				</a>
+			</div>
+			<div class="headerSearch">
+				{*}<input class="headerSearch__input" type="text" placeholder="Hledat">{*}
+				<a href="" class="button button--blue">Private</a>
+			</div>
+		</div>
+		<div class="header__row header__row--nav">
+			<div class="headerNavigation">
+				{include 'navigation.latte'}
+				<div class="hamburger">
+					<span class="hamburger__label">Menu</span>
+					<div class="hamburger__trigger">
+						<span class="hamburger__trigger--bread-top"></span>
+						<span class="hamburger__trigger--meat"></span>
+						<span class="hamburger__trigger--bread-bottom"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
