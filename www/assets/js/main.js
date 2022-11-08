@@ -1,6 +1,8 @@
 $(function() {
 	replaceSVG();
 
+	var scroll = new SmoothScroll('a[href*="#"]');
+
 	$('#hp-news').slick({
 		infinite: true,
 		speed: 300,
