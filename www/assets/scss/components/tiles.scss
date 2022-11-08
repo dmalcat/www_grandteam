@@ -50,7 +50,6 @@
 }
 
 .tile--blue {
-	margin-top: -30px;
 	background-color: $blue;
 
 	.tile__headline,
@@ -58,4 +57,8 @@
 	.tile__link {
 		color: $white;
 	}
+}
+
+.tile--center {
+	transform: translateY(-30px);
 }

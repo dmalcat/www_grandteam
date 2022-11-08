@@ -23,6 +23,13 @@
 
 	.navigation__item--active {
 		.navigation__link {
+			font-weight: bold;
+			color: $blue;
+		}
+	}
+
+	.navigation__item--active {
+		.navigation__link {
 			text-decoration: none;
 		}
 	}
