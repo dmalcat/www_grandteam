@@ -43,3 +43,4 @@ dist/
 *.flv
 *.mov
 *.wmv
+node_modules
