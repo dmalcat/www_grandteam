@@ -71,6 +71,24 @@ final class RouterFactory
 					'action' 		=> 'subpage',
 					'region' 		=> $region
 				]);
+
+				$router->addRoute($basePath . $region . '/finance/subpage', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'subpage',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/o-nas', [
+					'presenter' 	=> 'About',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/partneri', [
+					'presenter' 	=> 'Partners',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
 			}
 
 		} else {

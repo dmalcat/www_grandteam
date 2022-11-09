@@ -1,6 +1,12 @@
 @import '../config';
 @import '../core/breakpoints';
 
+.buttonRow {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
 .button {
 	display: inline-flex;
 	text-align: center;

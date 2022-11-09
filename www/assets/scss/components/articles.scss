@@ -43,7 +43,10 @@
 		.articles__row {
 			margin-bottom: 0;
 		}
-		
+	}
+
+	.articles__block--center {
+		text-align: center;
 	}
 
 	.articles__col--copy {
@@ -80,5 +83,9 @@
 	h2 {
 		font-size: 24px;
 	
+	}
+
+	.perex {
+		font-size: 20px;
 	}
 }

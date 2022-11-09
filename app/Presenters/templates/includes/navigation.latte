@@ -10,19 +10,16 @@
 			<a class="navigation__link" n:href="Finance:">Investování a spoření</a>
 		</li>
 		<li n:class="navigation__item">
-			<a class="navigation__link" n:href="Finance:">Ostatní služby</a>
+			<a class="navigation__link" href="">Ostatní služby</a>
 		</li>
-		<li class="navigation__item">
-			<a class="navigation__link" n:href="Finance:">O nás</a>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('About:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="About:">O nás</a>
 		</li>
-		<li n:class="navigation__item">
-			<a class="navigation__link" n:href="Finance:">Partneři</a>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Partners:default') ? navigation__item--active">
+			<a class="navigation__link" n:href="Partners:">Partneři</a>
 		</li>
 		<li n:class="navigation__item">
 			<a class="navigation__link" n:href="Finance:">Aktuality</a>
-		</li>
-		<li n:class="navigation__item">
-			<a class="navigation__link" n:href="Styleguide:">Styleguide</a>
 		</li>
 	</ul>
 </nav>
