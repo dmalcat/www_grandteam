@@ -31,17 +31,24 @@
 		padding: 0;
 		margin-bottom: 0;
 		.articles__row {
-			margin-bottom: 0;
+			align-items: center;
+			margin: 0 0 30px;
 		}
 
 		.articles__col--copy {
-			margin: 20px 0;
-			padding: 45px 90px;
 			background-color: $light-blue;
+			padding: 45px 90px;
 		}
 
 		h1 {
 			color: $blue;
+		}
+	}
+
+	.articles__block--box {
+		.articles__row {
+			margin-top: 60px;
+			background-color: $light-blue;
 		}
 	}
 
@@ -69,9 +76,7 @@
 	padding-top: 0;
 
 	.articles__row {
-		.articles__col--copy {
-			margin: 50px 0;
-		}
+		margin: 50px 0;
 	}
     
 	h1 {
