@@ -16,11 +16,11 @@
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
 				{*}
-				<source srcset="{$basePath}/assets/images/content/cover/cover-insurance.png" media="(max-width: 1920px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/subpages/businessman/cover.png" media="(max-width: 1920px)" type="image/png">
 				{*}
 				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
 				{*}
-				<img src="{$basePath}/assets/images/content/cover/cover-insurance.png" alt="">
+				<img src="{$basePath}/assets/images/content/content/subpages/businessman/cover.png" alt="">
 			</picture>
 		</div>
 	</div>
@@ -37,19 +37,26 @@
 
 <section class="articles articles--content">
 	<div class="articles__wrapper wrapper">
-		<div class="articles__block articles__block--perex">
-			<div class="articles__row articles__row--blue row">
+		<div class="articles__block articles__block--blue articles__block--box">
+			<div class="articles__row row">
 				<div class="articles__col articles__col--copy">
                     <p>
                         Pojištění podnikatelů (drobných, středních, velkých) je důležitou ochranou před riziky spojenými právě se samotným podnikáním, řízením či provozem firmy. Pojištění poskytuje komplexní pojistnou ochranu proti nejrůznějším vnějším rizikům (živelným nebezpečím a katastrofám, krádežím, odcizení, vandalismu, aj.), ale i proti majetkovým a finančním škodám, ke kterým dochází v důsledku negativního působení obchodních či podnikatelských rizik.
                     </p>
                 </div>
+				<div class="articles__col articles__col--box">
+					<div class="blueBox">
+						<p>
+							Pojišťovny většinou ke každému podnikateli či firmě přistupují v rámci podnikatelského pojištění individuálně a řeší pojištění vybraných rizik podnikatele tzv. „na míru“.
+						</p>
+					</div>
+				</div>
             </div>
         </div>
         <div class="articles__block">
-            <p>
+            <h3>
                 Druhy pojištění podnikatelů:
-            </p>
+            </h3>
             <ul>
                 <li>Pojištění majetku (movitého i nemovitého)</li>
                 <li>Pojištění pozastavení nebo přerušení provozu</li>
@@ -58,14 +65,42 @@
                 <li>Ostatní specifická pojištění</li>
                 <li>Atd…</li>
             </ul>
+		</div>
 
-            <p>
-                Pojišťovny většinou ke každému podnikateli či firmě přistupují v rámci podnikatelského pojištění individuálně a řeší pojištění vybraných rizik podnikatele tzv. „na míru“.
-            </p>
+		<div class="articles__block articles__block--center">
+			<p class="perex">
+				V případě zájmu o další informace nás <br>
+				kontaktujte skrze formulář níže.
+			</p>
 
-            <p>
-                V případě zájmu o další informace nás kontaktujte skrze formulář níže.
-            </p>
-        </div>
+			<div class="buttonRow">
+				<a href="#kontaktujte-nas" class="button button--blue">Kontaktovat</a>
+			</div>
+		</div>
+		
     </div>
+</section>
+
+{include '../includes/form.latte'}
+
+<section class="articles articles--hp">
+	<div class="articles__wrapper wrapper">
+		<div class="articles__block articles__block--blue">
+			<div class="articles__row row">
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/assets/images/content/articles/hp-2.png" alt="">
+				</div>
+				<div class="articles__col articles__col--copy">
+					<h1>Chcete začít spořit?</h1>
+					<p>
+						Zajímají Vás investice a spoření? Chcete se zajistit na důchod,
+						založit spoření pro děti nebo se jen dozvědět, jaké možnosti spoření a investování jsou pro Vás ty nejlepší? Podívejte se na náš jednoduchý přehled, který Vám s orientací v této oblasti jistě pomůže.
+					</p>
+					<div>
+						<a href="" class="button button--blue">Číst dál</a>
+					<div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
