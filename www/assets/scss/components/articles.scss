@@ -7,17 +7,6 @@
 		margin-bottom: 120px;
 	}
 
-	.articles__row--blue {
-		.articles__col--copy {
-			margin: 20px 0;
-			background-color: $light-blue;
-		}
-
-		h1 {
-			color: $blue;
-		}
-	}
-
 	h1 {
 		font-size: 1.5rem;
 		line-height: 1.5;
@@ -35,13 +24,24 @@
 	.articles__block {
 		padding: 0 90px;
 		margin-bottom: 90px;
+	
 	}
 
-	.articles__block--perex {
+	.articles__block--blue {
 		padding: 0;
 		margin-bottom: 0;
 		.articles__row {
 			margin-bottom: 0;
+		}
+
+		.articles__col--copy {
+			margin: 20px 0;
+			padding: 45px 90px;
+			background-color: $light-blue;
+		}
+
+		h1 {
+			color: $blue;
 		}
 	}
 
@@ -53,8 +53,6 @@
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-
-		padding: 45px 90px;
 		box-sizing: border-box;
 	}
 
