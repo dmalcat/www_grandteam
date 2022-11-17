@@ -72,9 +72,63 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
-				$router->addRoute($basePath . $region . '/finance/subpage', [
-					'presenter' 	=> 'Finance',
-					'action' 		=> 'subpage',
+				$router->addRoute($basePath . $region . '/pojisteni/pojisteni-majetku', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'property',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/pojisteni-odpovednosti', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'responsibility',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/pojisteni-odpovednosti', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'responsibility',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/pojisteni-sportovcu', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'athletes',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/podnikatele', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'businessmen',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/motorova-vozidla', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'cars',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/zemedelci', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'farmers',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/pravni-ochrana', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'law',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/zivot-lidi', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'people',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/pojisteni/cestovni-pojisteni', [
+					'presenter' 	=> 'Insurance',
+					'action' 		=> 'travel',
 					'region' 		=> $region
 				]);
 
