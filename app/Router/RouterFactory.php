@@ -132,6 +132,31 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				// Finance
+				$router->addRoute($basePath . $region . '/finance/spotrebitelske-uvery', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'loans',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/finance/podnikatelske-pujcky', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'businessLoans',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/finance/uvery-ze-stavebniho-sporeni', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'savingsLoans',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/finance/konsolidace', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'consolidation',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/finance', [
 					'presenter' 	=> 'Finance',
 					'action' 		=> 'subpage',

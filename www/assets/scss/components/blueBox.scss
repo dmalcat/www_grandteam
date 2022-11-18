@@ -1,7 +1,7 @@
 .blueBox {
     padding: 50px;
     box-sizing: border-box;
-    max-width: 350px;
+    max-width: 440px;
     width: 100%;
     margin: 0 auto;
     background-color: $blue;
@@ -11,6 +11,22 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    h3 {
+        font-size: 20px;
+        margin: 0 0 15px;
+        color: $white;
+        text-align: left;
+    }
+
+    ul {
+        margin-bottom: 0;
+        li {
+            text-align: left;
+            color: $white;
+        }
+    } 
+    
     
     p {
         font-size: 20px;
