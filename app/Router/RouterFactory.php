@@ -157,11 +157,13 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
-				$router->addRoute($basePath . $region . '/finance', [
-					'presenter' 	=> 'Finance',
-					'action' 		=> 'subpage',
+				// Investments
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'default',
 					'region' 		=> $region
 				]);
+
 
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
