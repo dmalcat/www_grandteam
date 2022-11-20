@@ -27,9 +27,11 @@
 	}
 
 	.articles__block {
-		padding: 0 90px;
+		//padding: 0 90px;
 		margin-bottom: 90px;
-	
+		.articles__col--copy {
+			padding: 45px 90px;
+		}
 	}
 
 	.articles__block--blue {
@@ -37,12 +39,11 @@
 		margin-bottom: 0;
 		.articles__row {
 			align-items: center;
-			margin: 0 0 30px;
+			margin: 15px 0 30px;
 		}
 
 		.articles__col--copy {
 			background-color: $light-blue;
-			padding: 45px 90px;
 		}
 
 		h2 {
