@@ -7,6 +7,6 @@ namespace FreshBangApp\Presenters;
 use Nette;
 
 
-final class FinancePresenter extends BasePresenter
+final class ContactPresenter extends BasePresenter
 {
 }
