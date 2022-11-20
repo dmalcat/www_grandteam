@@ -164,6 +164,13 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				// Investments
+				$router->addRoute($basePath . $region . '/proc-sporit/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'whySave',
+					'region' 		=> $region
+				]);
+
 
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
