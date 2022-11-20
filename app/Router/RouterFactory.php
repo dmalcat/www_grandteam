@@ -164,13 +164,41 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
-				// Investments
-				$router->addRoute($basePath . $region . '/proc-sporit/', [
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/proc-sporit/', [
 					'presenter' 	=> 'Investments',
 					'action' 		=> 'whySave',
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/rezervotvorna-zivotni-pojisteni/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'lifeInsurance',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/penzijni-pripojisteni/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'pensionInsurance',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/stavebni-sporeni/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'buildSavings',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/investovani-do-opf/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'opfInvestments',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/investovani-do-komodit/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'commodityInvestments',
+					'region' 		=> $region
+				]);
 
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
