@@ -25,6 +25,10 @@
 	box-sizing: border-box;
 	text-align: center;
 	text-decoration: none;
+	@extend .trans;
+	&:hover {
+		transform: translateY(-30px);
+	}
 
 	.tile__icon {
 		display: block;
@@ -60,5 +64,5 @@
 }
 
 .tile--center {
-	transform: translateY(-30px);
+	//
 }
