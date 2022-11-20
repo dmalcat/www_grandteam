@@ -54,7 +54,7 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
-				$router->addRoute($basePath . $region . '/finance', [
+				$router->addRoute($basePath . $region . '/financovani', [
 					'presenter' 	=> 'Finance',
 					'action' 		=> 'default',
 					'region' 		=> $region
