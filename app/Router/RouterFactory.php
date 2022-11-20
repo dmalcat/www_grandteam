@@ -200,6 +200,31 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				// Investments
+				$router->addRoute($basePath . $region . '/ostatni-sluzby/', [
+					'presenter' 	=> 'OtherServices',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/ostatni-sluzby/prumyslova-pojisteni', [
+					'presenter' 	=> 'OtherServices',
+					'action' 		=> 'industrialInsurance',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/ostatni-sluzby/pojisteni-dopravcu', [
+					'presenter' 	=> 'OtherServices',
+					'action' 		=> 'carrierInsurance',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/ostatni-sluzby/dotace-eu', [
+					'presenter' 	=> 'OtherServices',
+					'action' 		=> 'euSubsidy',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',

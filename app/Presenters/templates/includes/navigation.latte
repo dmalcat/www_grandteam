@@ -9,8 +9,8 @@
 		<li n:class="navigation__item, $presenter->isLinkCurrent('Investments:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Investments:">Investování a spoření</a>
 		</li>
-		<li n:class="navigation__item">
-			<a class="navigation__link" href="">Ostatní služby</a>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('OtherServices:*') ? navigation__item--active">
+			<a class="navigation__link" n:href="OtherServices:default">Ostatní služby</a>
 		</li>
 		<li n:class="navigation__item, $presenter->isLinkCurrent('About:default') ? navigation__item--active">
 			<a class="navigation__link" n:href="About:">O nás</a>

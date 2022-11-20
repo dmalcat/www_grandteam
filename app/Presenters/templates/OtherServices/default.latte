@@ -1,0 +1,89 @@
+{block content}
+
+<section class="cover">
+	<div class="cover__visual">
+		<div class="cover__visual-inner">
+			<picture class="cover__image">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover-insurance.png" media="(max-width: 1920px)" type="image/png">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
+				{*}
+				<img src="{$basePath}/assets/images/content/cover/cover-insurance.png" alt="">
+			</picture>
+		</div>
+	</div>
+
+	<div class="cover__wrapper wrapper">
+		<h1 n:block=title>
+			Ostatní služby
+		</h1>
+		<div class="cover__button">
+			<a class="button button--blue" href="#kontaktujte-nas">Sjednat</a>
+		</div>
+	</div>
+</section>
+
+<section class="tiles tiles--hp">
+	<div class="tiles__wrapper wrapper">
+		<div class="tiles__row row">
+			<a class="tile" n:href="OtherServices:industrialInsurance">
+				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/prumyslova-pojisteni.svg" alt="">
+				<span class="tile__headline">Průmyslová pojištění</span>
+				<p class="tile__copy">
+					Pojistěte si svou nemovitost nebo domácnost.
+				</p>
+				<span class="tile__link">Více</span>
+			</a>
+			<a class="tile tile--blue" n:href="OtherServices:carrierInsurance">
+				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/pojisteni-dopravcu.svg" alt="">
+				<span class="tile__headline">Pojištění dopravců</span>
+				<p class="tile__copy">
+					Pojištění zaměstnanecké nebo nebo občansko-právní odpovědnosti.
+				</p>
+				<span class="tile__link">Více</span>
+			</a>
+			<a class="tile" n:href="OtherServices:euSubsidy">
+				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/dotace-eu.svg" alt="">
+				<span class="tile__headline">Dotace EU</span>
+				<p class="tile__copy">
+					Povinné ručení a havarijní pojištění
+				</p>
+				<span class="tile__link">Více</span>
+			</a>
+		</div>
+	</div>
+</section>
+
+{include '../includes/form.latte'}
+
+<section class="">
+<section class="articles articles--hp">
+	<div class="articles__wrapper wrapper">
+		<div class="articles__row articles__row--blue  row">
+			<div class="articles__col articles__col--image">
+				<img class="articles__image" src="{$basePath}/assets/images/content/articles/hp-2.png" alt="">
+			</div>
+			<div class="articles__col articles__col--copy">
+				<h1>Chcete začít spořit?</h1>
+				<p>
+					Zajímají Vás investice a spoření? Chcete se zajistit na důchod,
+					založit spoření pro děti nebo se jen dozvědět, jaké možnosti spoření a investování jsou pro Vás ty nejlepší? Podívejte se na náš jednoduchý přehled, který Vám s orientací v této oblasti jistě pomůže.
+				</p>
+				<div>
+					<a href="" class="button button--blue">Číst dál</a>
+				<div>
+			</div>
+		</div>
+</section>
