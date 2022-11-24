@@ -225,6 +225,25 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				// Partners
+				$router->addRoute($basePath . $region . '/partneri/kafa-team-sport', [
+					'presenter' 	=> 'Partners',
+					'action' 		=> 'kafa',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/partneri/ok-holding', [
+					'presenter' 	=> 'Partners',
+					'action' 		=> 'okHolding',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/partneri/ok-real-estate', [
+					'presenter' 	=> 'Partners',
+					'action' 		=> 'okRealEstate',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',

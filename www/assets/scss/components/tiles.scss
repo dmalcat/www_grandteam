@@ -16,6 +16,16 @@
 	}
 }
 
+.tiles--partners {
+	.tile {
+		.tile__icon {
+			max-width: 175px;
+		}	
+	}
+	
+	
+}
+
 .tile {
 	background-color: $light-blue;
 	max-width: 350px;
@@ -61,8 +71,4 @@
 	.tile__link {
 		color: $white;
 	}
-}
-
-.tile--center {
-	//
 }

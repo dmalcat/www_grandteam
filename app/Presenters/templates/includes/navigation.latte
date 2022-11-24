@@ -12,10 +12,10 @@
 		<li n:class="navigation__item, $presenter->isLinkCurrent('OtherServices:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="OtherServices:default">Ostatní služby</a>
 		</li>
-		<li n:class="navigation__item, $presenter->isLinkCurrent('About:default') ? navigation__item--active">
+		<li n:class="navigation__item, $presenter->isLinkCurrent('About:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="About:">O nás</a>
 		</li>
-		<li n:class="navigation__item, $presenter->isLinkCurrent('Partners:default') ? navigation__item--active">
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Partners:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Partners:">Partneři</a>
 		</li>
 		<li n:class="navigation__item">
