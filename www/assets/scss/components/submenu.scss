@@ -6,7 +6,7 @@
 	top: 197px;
 	transform: translateX(-50%);
     padding: 2.25rem 1rem;
-	background-color: $light-blue;
+	background-color: $blue;
 	box-sizing: border-box;
 	width: 100%;
 	border-top: 1px solid #ccc;
@@ -50,7 +50,7 @@
         width: 375px;
 		&:hover {
 			.submenu__link {
-				color: $blue;
+				border-color: $white;
 			}
 
 			&:after {
@@ -60,15 +60,15 @@
 	}
 
 	.submenu__link {
-		display: block;
-		color: $black;
+		display: inline-block;
+		color: $white;
 		font-size: 0.85rem;
 		text-transform: uppercase;
         text-decoration: none;
 		font-weight: bold;
+		border-bottom: 1px solid transparent;
 		@extend .trans;
         @include max1024px {
-			color: $white;
 			text-transform: none;
 		}
 

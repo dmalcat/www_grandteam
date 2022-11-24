@@ -48,8 +48,9 @@ const paths = {
 			assetsPath + '/js/libs/nette.ajax.js',
 			assetsPath + '/js/libs/live-form-validation.js',
 			assetsPath + '/js/libs/baguetteBox.js',
-			assetsPath + '/js/libs/hamburger.js',
+			//assetsPath + '/js/libs/hamburger.js',
 			assetsPath + '/js/libs/smooth-scroll.js',
+			assetsPath + '/js/libs/offCanvasMenu.js',
 			assetsPath + '/js/libs/tingle.js',
 			assetsPath + '/js/libs/svg.js',
 			assetsPath + '/js/main.js'
