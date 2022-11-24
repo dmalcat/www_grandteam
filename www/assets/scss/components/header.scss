@@ -3,12 +3,10 @@
 .header {
 	position: relative;
 	background-color: $header-bg-color;
-	padding: 40px 20px;
+	padding: 40px 20px 0;
 	@media screen and (max-width: $hamburger-breakpoint) {
 		z-index: 1010;
 	}
-
-	.header__wrapper {}
 
 	.header__row {
 		display: flex;

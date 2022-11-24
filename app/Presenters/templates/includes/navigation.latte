@@ -1,16 +1,114 @@
 <nav class="navigation">
 	<ul class="navigation__list">
-		<li n:class="navigation__item, $presenter->isLinkCurrent('Insurance:*') ? navigation__item--active">
+		<li n:class="'navigation__item navigation__item--has-submenu', $presenter->isLinkCurrent('Insurance:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Insurance:">Pojištění</a>
+			<span class="submenu">
+				<span class="submenu__wrapper wrapper">
+					<span class="submenu__row row">
+						<ul class="submenu__list">
+							<li class="submenu__item">
+								<a class="submenu__link" href="Insurance:property">Pojištění majetku</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:responsibility">Pojištění odpovědnosti</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:cars">Pojištění vozidel</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:travel">Cestovní pojištění</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:people">Život lidí</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:businessmen">Podnikatelé</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:athletes">Profesionální sportovci</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:farmers">Zemědělci (AGRO)</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Insurance:law">Právní ochrana</a>
+							</li>
+						</ul>
+					</span>
+				</span>
+			</span>
 		</li>
-		<li n:class="navigation__item, $presenter->isLinkCurrent('Finance:*') ? navigation__item--active">
+		<li n:class="'navigation__item navigation__item--has-submenu', $presenter->isLinkCurrent('Finance:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Finance:">Financování</a>
+			<span class="submenu">
+				<span class="submenu__wrapper wrapper">
+					<span class="submenu__row row">
+						<ul class="submenu__list">
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:loans">Spotřebitelské úvěry</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:consolidation">Konsolidace</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:businessLoans">Podnikatelské půjčky</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:savingsLoans">Úvěry ze stavebního spoření</a>
+							</li>
+						</ul>
+					</span>
+				</span>
+			</span>
 		</li>
-		<li n:class="navigation__item, $presenter->isLinkCurrent('Investments:*') ? navigation__item--active">
+		<li n:class="'navigation__item navigation__item--has-submenu', $presenter->isLinkCurrent('Investments:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Investments:">Investování a spoření</a>
+			<span class="submenu">
+				<span class="submenu__wrapper wrapper">
+					<span class="submenu__row row">
+						<ul class="submenu__list">
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Investments:whySave">Proč spořit</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Investments:lifeInsurance">Rezervotvorná životní pojištění</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Investments:pensionInsurance">Penzijní připojištění</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Investments:buildSavings">Stavební spoření</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Investments:opfInvestments">Investování do OPF</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Investments:commodityInvestments">Investování do komodit</a>
+							</li>
+						</ul>
+					</span>
+				</span>
+			</span>
 		</li>
-		<li n:class="navigation__item, $presenter->isLinkCurrent('OtherServices:*') ? navigation__item--active">
+		<li n:class="'navigation__item navigation__item--has-submenu', $presenter->isLinkCurrent('OtherServices:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="OtherServices:default">Ostatní služby</a>
+			<span class="submenu">
+				<span class="submenu__wrapper wrapper">
+					<span class="submenu__row row">
+						<ul class="submenu__list">
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:loans">Průmyslová pojištění</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:consolidation">Pojištění dopravců</a>
+							</li>
+							<li class="submenu__item">
+								<a class="submenu__link" n:href="Finance:businessLoans">Dotace EU</a>
+							</li>
+						</ul>
+					</span>
+				</span>
+			</span>
 		</li>
 		<li n:class="navigation__item, $presenter->isLinkCurrent('About:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="About:">O nás</a>

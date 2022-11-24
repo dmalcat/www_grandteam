@@ -14,6 +14,7 @@
 
 	.navigation__item {
 		margin: 0 1rem;
+		padding-bottom: 40px;
 		&:hover {
 			.navigation__link {
 				color: $blue;
@@ -25,12 +26,26 @@
 		.navigation__link {
 			font-weight: bold;
 			color: $blue;
+			text-decoration: none;
 		}
 	}
 
-	.navigation__item--active {
-		.navigation__link {
-			text-decoration: none;
+	.navigation__item--has-submenu {
+		background-image: url(#{$images-path}/ui/small-arrow-down.svg);	
+		background-position: 50% 70%;
+		background-repeat: no-repeat;
+		&.show {
+			.submenu {
+				display: flex;
+				z-index: 100;
+			}	
+		}
+		@extend .trans;
+		&:hover {
+			.submenu {
+				display: flex;
+				z-index: 100;
+			}
 		}
 	}
 
