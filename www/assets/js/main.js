@@ -5,8 +5,7 @@ $(function() {
 
 	$("#navigation").offCanvasMenu({
 		menuPosition: 'right',
-		openMenu: '#hamburger',
-		footerContent: 'Test'
+		openMenu: '#hamburger'
 	});
 
 	$('#hp-news').slick({
