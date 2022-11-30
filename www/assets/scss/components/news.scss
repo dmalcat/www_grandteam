@@ -4,26 +4,49 @@
 	background-color: $light-blue;
 	margin-bottom: 0;
 	padding: 60px 0;
+	h1 {
+		color: $blue;
+		margin-bottom: 60px;
+	}
+
 	.news__wrapper {
 		max-width: 1600px;
 	}
 
 	.news__row {
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		flex-flow: row wrap;
+	}
+
+	.news__item {
+		//max-width: 450px;
+		width: 30%;
+		border-radius: 15px;
+		box-sizing: border-box;
+		text-align: center;
+		text-decoration: none;
 	}
 
 	.news__item--center {
-	}
+		margin-top: -15px;
+		width: 40%;
+		.news__inner {
+			height: 100%;
+		}
 
+		.news__image {
+			width: 100%;
+		}
+	}	
+	
 	.news__inner {
 		position: relative;
+		display: flex;
+		height: 95%;
 	}
 
 	.news__image {
 		display: block;
-		max-width: 500px;
 		width: 100%;
 		border-radius: 10px;
 	}
