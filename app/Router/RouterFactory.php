@@ -244,6 +244,31 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				// News
+				$router->addRoute($basePath . $region . '/novinky', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'default',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/gesto-v-cene-cheeseburgeru', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'gesto',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/jak-financovat-rekonstrukci', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'reconstruction',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/prumerna-ulozka-do-penzijnich-fondu-je-750-korun-a-to-je-malo', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'pensionFunds',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',

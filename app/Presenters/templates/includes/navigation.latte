@@ -116,8 +116,8 @@
 		<li n:class="navigation__item, $presenter->isLinkCurrent('Partners:*') ? navigation__item--active">
 			<a class="navigation__link" n:href="Partners:">Partneři</a>
 		</li>
-		<li n:class="navigation__item">
-			<a class="navigation__link" n:href="Finance:">Aktuality</a>
+		<li n:class="navigation__item, $presenter->isLinkCurrent('Partners:*') ? navigation__item--active">
+			<a class="navigation__link" n:href="News:">Aktuality</a>
 		</li>
 		<li n:class="navigation__item, $presenter->isLinkCurrent('Contact:default') ? navigation__item--active">
 			<a class="navigation__link" n:href="Contact:default">Kontakt</a>
