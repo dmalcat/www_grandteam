@@ -3,7 +3,13 @@
 .form {
 	.form__group {
 		display: flex;
+		justify-content: space-between;
+		width: 100%;
 		margin-bottom: 2rem;
+		@include max480px {
+			flex-direction: column;
+			margin-bottom: 0;
+		}
 	}
 
 	@for $i from 1 through 10 {
@@ -26,6 +32,10 @@
 		flex-direction: column;
 		position: relative;
 		width: 45%;
+		@include max480px {
+			width: 100%;
+			margin-bottom: 3rem;
+		}
 	}
 
 	.form__input,
@@ -180,10 +190,7 @@
 		margin: 90px auto 0;
 	}
 
-	.form__group {
-		justify-content: space-between;
-		width: 100%;
-	}
+	
 
 	.form__group--button {
 		margin-top: 60px;
