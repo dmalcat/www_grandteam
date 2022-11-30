@@ -200,7 +200,19 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
-				// Investments
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/doplnkove-penzijni-pripojisteni/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'extraPensionInsurance',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/fondy-kvalifikovanych-investoru/', [
+					'presenter' 	=> 'Investments',
+					'action' 		=> 'qualifiedInvestors',
+					'region' 		=> $region
+				]);
+
+				// Other Services
 				$router->addRoute($basePath . $region . '/ostatni-sluzby/', [
 					'presenter' 	=> 'OtherServices',
 					'action' 		=> 'default',

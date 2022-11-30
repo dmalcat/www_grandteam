@@ -16,59 +16,72 @@
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
 				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
 				{*}
-				<source srcset="{$basePath}/assets/images/content/subpages/investments/save/cover.png" media="(max-width: 1920px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/subpages/investments/pensionInsurance/cover.png" media="(max-width: 1920px)" type="image/png">
 				{*}
 				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
 				{*}
-				<img src="{$basePath}/assets/images/content/subpages/investments/save/cover.png" alt="">
+				<img src="{$basePath}/assets/images/content/subpages/pensionInsurance/save/cover.png" alt="">
 			</picture>
 		</div>
 	</div>
 
 	<div class="cover__wrapper wrapper">
 		<h1 n:block=title>
-			Financování
+			Fondy kvalifikovaných <br>
+            investorů
 		</h1>
+		<div class="cover__button">
+			<a class="button button--blue" href="#kontaktujte-nas">Sjednat</a>
+		</div>
 	</div>
 </section>
 
-<section class="tiles tiles--hp">
-	<div class="tiles__wrapper wrapper">
-		<div class="tiles__row row">
-			<a class="tile" n:href="Finance:loans">
-				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/spotrebitelske-uvery.svg" alt="">
-				<span class="tile__headline">Hypotéky</span>
-				<p class="tile__copy">
-					Financování vlastního bydlení je zásadním životním mezníkem.
-				</p>
-				<span class="tile__link">Více</span>
-			</a>
-			<a class="tile tile--blue" n:href="Finance:consolidation">
-				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/konsolidace.svg" alt="">
-				<span class="tile__headline">Konsolidace</span>
-				<p class="tile__copy">
-					Potřebujete pomoci se sloučením více půjček a úvěrů?
-				</p>
-				<span class="tile__link">Více</span>
-			</a>
-			<a class="tile" n:href="Finance:businessLoans">
-				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/podnikatelske-pujcky.svg" alt="">
-				<span class="tile__headline">Podnikatelské půjčky</span>
-				<p class="tile__copy">
-					Založte si vlastní podnikání bez obav.
-				</p>
-				<span class="tile__link">Více</span>
-			</a>
-			<a class="tile tile--blue" n:href="Finance:savingsLoans">
-				<img class="tile__icon" src="{$basePath}/assets/images/ui/tiles/uvery-ze-stavebniho-sporeni.svg" alt="">
-				<span class="tile__headline">Úvěry ze stavebního spoření</span>
-				<p class="tile__copy">
-					Máte stavební spoření a chcete se dozvědět více o jeho možnostech?
-				</p>
-				<span class="tile__link">Více</span>
-			</a>
+<section class="articles articles--content">
+	<div class="articles__wrapper wrapper">
+		<div class="articles__block articles__block--blue articles__block--box">
+			<div class="articles__row row">
+				<div class="articles__col articles__col--copy">
+                    <p>
+                        Bude doplněno.
+                    </p>
+                </div>
+                <div class="articles__col articles__col--box">
+					<div class="blueBox">
+						<p>
+							Bude doplněno.
+						</p>
+					</div>
+				</div>
+            </div>
+        </div>
+        <div class="articles__block">
+            <div class="articles__row articles__row--inline row">
+				<div class="articles__col articles__col--copy">
+                    <h3>Výhody penzijního připojištění:</h3>
+                    
+					<ul>
+						<li>Státní příspěvek</li>
+						<li>Zhodnocení vložených finančních prostředků vyhlašovanou úrokovou sazbou</li>
+						<li>Možnost daňových odpočtů</li>
+						<li>Garance ze strany státu</li>
+						<li>Možnost určení způsobu výplaty naspořených prostředků po skončení smlouvy</li>
+						<li>A další...…</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+        
+        <div class="articles__block articles__block--center">
+			<p class="perex">
+				V případě zájmu o další informace nás <br>
+				kontaktujte skrze formulář níže.
+			</p>
+
+			<div class="buttonRow">
+				<a href="#kontaktujte-nas" class="button button--blue">Kontaktovat</a>
+			</div>
 		</div>
-	</div>
+    </div>
 </section>
 
 {include '../includes/form.latte'}
