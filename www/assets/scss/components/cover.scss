@@ -30,11 +30,17 @@
 		text-align: center;
 		font-weight: 400;
 		@media screen and (max-width: 1270px) {
-			//font-size: $hero-font-size -10%;
+			font-size: 45px;
 		}
 
-		@media screen and (max-width: 830px) {
-			//font-size: $hero-font-size - 20%;
+		@include max640px {
+			font-size: 37.5px;
+			margin-bottom: 30px;
+		}
+
+		@include max480px {
+			font-size: 30px;
+			margin-bottom: 20px;
 		}
 
 		@include max375px {

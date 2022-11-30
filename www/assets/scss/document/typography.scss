@@ -1,4 +1,5 @@
 @import '../config';
+@import '../core/breakpoints';
 
 html,
 body {
@@ -14,6 +15,9 @@ h1, h2, h3, h4, h5 {
 h1 {
 	font-size: $h1-font-size;
 	line-height: 1.25;
+	@include max640px {
+		font-size: 2.5rem;
+	}
 }
 
 h2 {

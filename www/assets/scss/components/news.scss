@@ -16,6 +16,10 @@
 	.news__row {
 		display: flex;
 		flex-flow: row wrap;
+		@media screen and (max-width: 1120px) {
+			justify-content: center;
+			gap: 30px;
+		}
 	}
 
 	.news__item {
@@ -25,11 +29,21 @@
 		box-sizing: border-box;
 		text-align: center;
 		text-decoration: none;
+		@media screen and (max-width: 1120px) {
+			max-width: 450px;	
+			width: 100%;
+		}
 	}
 
 	.news__item--center {
 		margin-top: -15px;
 		width: 40%;
+		@media screen and (max-width: 1120px) {
+			max-width: 450px;	
+			width: 100%;
+			margin-top: 0;
+		}
+
 		.news__inner {
 			height: 100%;
 		}
@@ -43,6 +57,9 @@
 		position: relative;
 		display: flex;
 		height: 95%;
+		@media screen and (max-width: 1120px) {
+			height: 100%;
+		}
 	}
 
 	.news__image {

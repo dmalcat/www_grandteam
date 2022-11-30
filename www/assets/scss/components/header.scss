@@ -4,6 +4,10 @@
 	position: relative;
 	background-color: $header-bg-color;
 	padding: 40px 20px 0;
+	@media screen and (max-width: $hamburger-breakpoint) {
+		padding: 40px 20px 20px;
+	}
+
 	.header__row {
 		display: flex;
 	}

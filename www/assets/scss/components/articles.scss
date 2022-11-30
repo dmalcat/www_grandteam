@@ -86,6 +86,40 @@
 	}
 }
 
+.articles--hp {
+	.articles__row {
+		@media screen and (max-width: 890px) {
+			flex-direction: column;
+		}
+	}
+
+	.articles__block {
+		.articles__col {
+			@media screen and (max-width: 890px) {
+				max-width: 580px;
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+		
+		.articles__col--image {
+			@media screen and (max-width: 890px) {
+				order: -1;
+			}
+		}
+
+		.articles__col--copy {
+			@media screen and (max-width: 890px) {
+				padding: 45px 60px;
+			}	
+
+			@media screen and (max-width: 480px) {
+				padding: 30px;
+			}
+		}
+	}
+}
+
 .articles--content {
 	position: relative;
 	margin-top: -30px;

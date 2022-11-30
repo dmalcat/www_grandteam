@@ -21,6 +21,16 @@
 	@include max940px {
 		display: block;
 	}
+
+	@include max640px {
+		padding: 15px 30px;
+		font-size: 15px;
+	}
+
+	@include max480px {
+		padding: 10px 20px;
+		font-size: 13px;
+	}
 }
 
 .button--blue {

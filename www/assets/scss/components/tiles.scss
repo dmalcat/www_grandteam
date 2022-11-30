@@ -5,6 +5,10 @@
 	margin-top: -60px;
 	z-index: 100;
 	margin-bottom: 0;
+	@media screen and (max-width: 1120px) {
+		margin-top: 60px;
+	}
+
 	.tiles__wrapper {
 		padding-bottom: 120px;
 		border-bottom: 1px solid #c7c6c6;
