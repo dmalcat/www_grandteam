@@ -1,48 +1,90 @@
 {block content}
 
-<section class="news">
-	<div class="news__wrapper wrapper">
-		<h1 class="text-center">Aktuality</h1>
+<section class="cover">
+	<div class="cover__visual">
+		<div class="cover__visual-inner">
+			<picture class="cover__image">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_640.webp" media="(max-width: 640px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_640.png" media="(max-width: 640px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_768.webp" media="(max-width: 768px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_768.png" media="(max-width: 768px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.webp" media="(max-width: 1024px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1024.png" media="(max-width: 1024px)" type="image/png">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.webp" media="(max-width: 1440px)" type="image/webp">
+				<source srcset="{$basePath}/assets/images/content/cover/cover_1440.png" media="(max-width: 1440px)" type="image/png">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/subpages/news/cover.png" media="(max-width: 1920px)" type="image/png">
+				{*}
+				<source srcset="{$basePath}/assets/images/content/cover/cover_2560.png" media="(max-width: 2560px)" type="image/png">
+				{*}
+				<img src="{$basePath}/assets/images/content/subpages/news/cover.png" alt="">
+			</picture>
+		</div>
+	</div>
 
-		<div class="news__wrapper wrapper">
-			<div class="news__row">
-				<span class="news__item">
-					<span class="news__inner">
-						<img class="news__image" src="{$basePath}/assets/images/content/news/tiles/jak-financovat-rekonstrukci.jpg" alt="">
-						<span class="news__content">
-							<h1>
-								Jak financovat <br> rekonstrukci?
-							</h1>
+	<div class="cover__wrapper wrapper">
+		<h1 n:block=title>
+			Rada ČNB zřejmě nechá <br>
+			úrokovou sazbu na sedmi procentech
+		</h1>
+		<div class="cover__button">
+			<a class="button button--blue" href="#kontaktujte-nas">Číst dál</a>
+		</div>
+	</div>
+</section>
 
-							<a n:href="News:reconstruction" class="button button--blue">Číst dál</a>
-						</span>
-					</span>
-				</span>
-				<span class="news__item news__item--center">
-					<span class="news__inner">
-						<img class="news__image" src="{$basePath}/assets/images/content/news/tiles/gastro-v-cene-cheesburgeru.jpg" alt="">
-						<span class="news__content">
-							<h1>
-								Gesto v ceně <br> cheesburgeru
-							</h1>
+<section class="articles articles--news">
+	<div class="articles__wrapper wrapper">
+		<div class="article__block articles__block--blue">
+			<div class="articles__row row">
+				<div class="articles__col articles__col--copy">
+					<h1>Jak financovat <br> rekonstrukci?</h1>
+					<p>
+						Současné extrémní ceny energií jsou pro řadu domácností impulsem k rekonstrukci bydlení, která zajistí energeticky úspornější provoz. Vyvstává ale řada otázek ohledně financování. Jaký zvolit poměr využití úspor a úvěru?
+					</p>
+					<div>
+						<a n:href="News:reconstruction" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/assets/images/content/news/tiles/jak-financovat-rekonstrukci.jpg" alt="">
+				</div>
+			</div>
 
-							<a n:href="News:gesto" class="button button--blue">Číst dál</a>
-						</span>
-					</span>
-				</span>
-				<span class="news__item">
-					<span class="news__inner">
-						<img class="news__image" src="{$basePath}/assets/images/content/news/tiles/prumerna-ulozka-do-penzijnich-fondu.jpg" alt="">
-						<span class="news__content">
-							<h1>
-								Průměrná úložka do penzijních fondů
-							</h1>
+			<div class="articles__row row">
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/assets/images/content/news/tiles/gastro-v-cene-cheesburgeru.jpg" alt="">
+				</div>
+				<div class="articles__col articles__col--copy">
+					<h1>Gesto v ceně <br> cheesburgeru</h1>
+					<p>
+						Říjen na hypotečním trhu potvrzuje, že trend zdražování půjček na bydlení patří alespoň prozatím historii. Hovoří o tom průměrná říjnová úroková sazba, která podle Fincentrum Hypoindexu podruhé v řadě mírně klesla na rovných 6,2 procenta.
+					</p>
+					<div>
+						<a n:href="News:gesto" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+			</div>
 
-							<a n:href="News:pensionFunds" class="button button--blue">Číst dál</a>
-						</span>
-					</span>
-				</span>
+			<div class="articles__row row">
+				<div class="articles__col articles__col--copy">
+					<h1>Průměrná úložka do penzijních fondů</h1>
+					<p>
+						Říjen na hypotečním trhu potvrzuje, že trend zdražování půjček na bydlení patří alespoň prozatím historii. Hovoří o tom průměrná říjnová úroková sazba, která podle Fincentrum Hypoindexu podruhé v řadě mírně klesla na rovných 6,2 procenta.
+					</p>
+					<div>
+						<a n:href="News:pensionFunds" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/assets/images/content/news/tiles/prumerna-ulozka-do-penzijnich-fondu.jpg" alt="">
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
+{include '../includes/form.latte'}

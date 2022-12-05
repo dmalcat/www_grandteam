@@ -79,7 +79,9 @@
 		}
 
 		.articles__image {
-			border-radius: 0 0 10px 10px;
+			@include max1024px {
+				border-radius: 0 0 10px 10px;
+			}	
 		}
 
 		h2 {
@@ -189,6 +191,14 @@
 .articles--news {
 	.articles__col {
 		width: 100%;
+	}
+
+	.articles__col--copy {
+		padding: 45px 90px;
+		max-width: 660px;
+	}
 	
+	.articles__image {
+		border-radius: 10px;
 	}
 }
