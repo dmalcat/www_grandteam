@@ -200,7 +200,7 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
-				$router->addRoute($basePath . $region . '/investice-a-sporeni/doplnkove-penzijni-pripojisteni/', [
+				$router->addRoute($basePath . $region . '/investice-a-sporeni/doplnkove-penzijni-pojisteni/', [
 					'presenter' 	=> 'Investments',
 					'action' 		=> 'extraPensionInsurance',
 					'region' 		=> $region
