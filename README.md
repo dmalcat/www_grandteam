@@ -1,5 +1,5 @@
-# The Fresh Bang (SFN boilerplate)
-The Universe started with The Big Bang. So every SFN project should start with The Fresh Bang.
+# The Fresh Bang boilerplate
+The Universe started with The Big Bang. So every project should start with The Fresh Bang.
 
 ## How to install
 1. Create new project with composer:
