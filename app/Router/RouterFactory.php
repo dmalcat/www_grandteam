@@ -133,6 +133,11 @@ final class RouterFactory
 				]);
 
 				// Finance
+				$router->addRoute($basePath . $region . '/finance/hypoteky', [
+					'presenter' 	=> 'Finance',
+					'action' 		=> 'hypo',
+					'region' 		=> $region
+				]);
 				$router->addRoute($basePath . $region . '/finance/spotrebitelske-uvery', [
 					'presenter' 	=> 'Finance',
 					'action' 		=> 'loans',
@@ -253,6 +258,12 @@ final class RouterFactory
 				$router->addRoute($basePath . $region . '/partneri/ok-real-estate', [
 					'presenter' 	=> 'Partners',
 					'action' 		=> 'okRealEstate',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/partneri/ok-group', [
+					'presenter' 	=> 'Partners',
+					'action' 		=> 'okGroup',
 					'region' 		=> $region
 				]);
 
@@ -448,7 +459,7 @@ final class RouterFactory
             'strop_ceny_zemedelske_pudy' => 'Homepage:default',
             'danove_novinky_pro_rok_2019' => 'Homepage:default',
             'zadluzeni_prazane' => 'Homepage:default',
-            'hypoteky' => 'Homepage:default',
+            'hypoteky' => 'Finance:hypo',
             'investice_do_vody' => 'Homepage:default',
             'prispevky_na_sport' => 'Homepage:default',
         );

@@ -46,6 +46,9 @@
 		display: block;
 		max-width: 75px;
 		margin: 0 auto 1rem;
+		&.tile__smallicon {
+			padding: 20px 0;
+		}
 	}
 
 	.tile__headline {
