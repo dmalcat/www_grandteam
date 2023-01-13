@@ -1,0 +1,51 @@
+<html style="margin: 0; padding: 0;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Nová zpráva ze stránek grandteam.cz</title>
+</head>
+<body style="margin: 0; padding: 0;border-collapse: collapse;" cellpading="0" cellspacing="0">
+	<table  style="width: 100%; margin: 0; padding: 0;border-collapse: collapse;" cellpading="0" cellspacing="0">
+		<tr>
+			<td></td>
+			<td><br><br><h1 style="color: #009fe3; font-size: 22px; line-height: 30px; font-family: Arial;">Nová zpráva</h1></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Dobrý den,<br> ze stránek <a href="http://grandteam.cz/">grandteam.cz</a> byl odeslán následující dotaz:</p>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Jméno: {$name}</p>
+			</td>
+		</tr>
+		<tr n:if="$company">
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Jméno: {$company}</p>
+			</td>
+		</tr>
+		<tr n:if="$email">
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Email: {$email}</p>
+			</td>
+		</tr>
+		<tr n:if="$phone">
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Telefon: {$phone}</p>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 10px; line-height: 20px;"><br> Odesláno: {date('d. m. Y / H:i:s')}<br><br></p>
+			</td>
+		</tr>
+	</table>
+    
+</body>
+</html>

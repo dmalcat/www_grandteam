@@ -34,6 +34,9 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 	/** @var string @persistent */
 	public $region;
 
+    /** @var \App\Forms\ContactForm @inject */
+    public $contactForm;
+
 
 	public function startup(): void
 	{
@@ -116,4 +119,20 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 		}
 		return $translator->translate($str);
 	}
+
+
+    /**
+     * Contact form.
+     * @return Nette\Application\UI\Form
+     */
+    protected function createComponentContactForm()
+    {
+        $form = $this->contactForm->create();
+        $form->onSuccess[] = function ($form) {
+            $form->getPresenter()->flashMessage('Vaše zpráva byla úspěšně odeslána.', 'success');
+            $form->getPresenter()->redirect('Homepage:default');
+        };
+
+        return $form;
+    }
 }

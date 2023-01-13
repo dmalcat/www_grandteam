@@ -2,38 +2,43 @@
 	<div class="form__wrapper wrapper">
 		<h1>Kontaktuje nás</h1>
 
+		{form contactForm}
+		<ul class=error n:if="$form->ownErrors">
+			<li n:foreach="$form->ownErrors as $error">{$error}</li>
+		</ul>
 		<div class="form__inner">
 			<div class="form__group">
 				<div class="form__control">
-					<input type="text" class="form__input">
+					<input n:name=name type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
-					<label class="form__label">Jméno</label>
+					<label n:name=name class="form__label">Jméno</label>
 				</div>
 				<div class="form__control">
-					<input type="text" class="form__input">
+					<input n:name=phone type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
-					<label class="form__label">Telefon</label>
+					<label n:name=phone class="form__label">Telefon</label>
 				</div>
 			</div>
 			<div class="form__group">
 				<div class="form__control">
-					<input type="text" class="form__input">
+					<input n:name=email type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
-					<label class="form__label">Email</label>
+					<label n:name=email class="form__label">Email</label>
 				</div>
 				<div class="form__control">
-					<input type="text" class="form__input">
+					<input n:name=company type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
-					<label class="form__label">Společnost</label>
+					<label n:name=company class="form__label">Společnost</label>
 				</div>
 			</div>
 			<div class="form__group form__group--button">
-				<a href="" class="button button--white">Odeslat</a>
+				<input n:name=send class="button button--white" value="Odeslat" />
 			</div>
 		</div>
+		{/form}
 	</div>
 </section>
