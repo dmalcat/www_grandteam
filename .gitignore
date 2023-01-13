@@ -7,7 +7,7 @@ temp/
 log/
 
 # Composer
-vendor/
+/vendor/
 
 # Node artifact files
 node_modules/

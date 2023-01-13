@@ -1,0 +1,330 @@
+@import '../config';
+
+//settings >>
+$menu-width: 400px;
+$menu-width-small: 300px;
+$menu-color: rgba(2, 119, 255, 0.9);
+$menu-border: rgba(255, 255, 255, 0.25);
+$menu-header-height: 40px;
+$menu-footer-height: 40px;
+//<< settings
+
+.offCanvasMenu {
+	&, * {
+		box-sizing: border-box;
+	}
+	width: $menu-width-small;
+	height: 100%;
+	position: fixed;
+	background: $menu-color;
+	top: 0;
+	z-index: 999;
+	transition: all 300ms ease-in-out;
+	&.offCanvasMenu-left {
+		left: -$menu-width-small;
+	}
+	&.offCanvasMenu-right {
+		right: -$menu-width-small;
+	}
+	@media screen and (min-width: 550px){
+		width: $menu-width;
+		&.offCanvasMenu-left {
+			left: -$menu-width;
+		}
+		&.offCanvasMenu-right {
+			right: -$menu-width;
+		}
+	}
+
+	.menuContent {
+		overflow-y: auto;
+		height: 100%;
+		z-index: 99;
+		position: relative;
+		padding: $menu-header-height 0 $menu-footer-height;
+	}
+
+	.menuContent-in {
+		height: auto;
+		background: $menu-color;
+		min-height: 100%;
+		position: relative;
+		ul {
+			padding-left: 0;
+		}
+
+		ul li {
+			display: block;
+			height: auto;
+			border-bottom: 1px solid $menu-border;
+			line-height: inherit;
+			&:last-child {
+				border-bottom: none;
+			}
+			&.active {
+				line-height: inherit;
+				> a {
+					background: $white;
+					color: $black;
+				}
+			}
+			a {
+				display: block;
+				min-height: 40px;
+				text-decoration: none;
+				color: $white;
+				padding: 10px 0 10px 20px;
+				font-size: 15px;
+				position: relative;
+				&:hover,&:focus{
+					color: $blue;
+				}
+			}
+			.offCanvasMenu-subItem {
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				width: 50px;
+				background-size: cover;
+				//background: url(../../../images/png/arrows/arrow_right.png) no-repeat center center;
+				border-left: 1px solid $menu-border;
+				cursor: pointer;
+
+				&:after {
+					content: '';
+					border-top: 2px solid #b8b8b8;
+					border-left: 2px solid #b8b8b8;
+					display: block;
+					width: 8px;
+					height: 8px;
+					margin: auto;
+					position: absolute;
+					top: 50%;
+					margin-top: -4px
+				}
+
+				//&:before {
+				//  -webkit-transform: rotate(-45deg);
+				//  -ms-transform: rotate(-45deg);
+				//  transform: rotate(-45deg);
+				//  left: 23px;
+				//  right: auto
+				//}
+
+				&:after {
+					-webkit-transform: rotate(135deg);
+					-ms-transform: rotate(135deg);
+					transform: rotate(135deg);
+					right: 23px;
+					left: auto
+				}
+
+			}
+			ul {
+				display: none;
+				li {
+					> a {
+						padding: 10px 0 10px 20px;
+					}
+				}
+				&.offCanvasMenu-active {
+					background: $menu-color;
+					display: block;
+					height: 100%;
+					width: $menu-width-small;
+					@media screen and (min-width: 550px){
+						width: $menu-width;
+					}
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 1;
+				}
+			}
+		}
+	}
+	.offCanvasMenuHeader {
+		background: $menu-color;
+		height: $menu-header-height;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-bottom: 1px solid $menu-border;
+		z-index: 999;
+		.subcloseButton{
+			height: $menu-header-height;
+			width: 80px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background: transparent;
+			cursor: pointer;
+			display: none;
+			//border-right: 1px solid $menu-border;
+			&.active{
+				display:block;
+			}
+
+			.subcloseButton-in {
+				display: inline-block;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -17px 0 0 -17px;
+				width: 34px;
+				height: 34px;
+				&:after {
+					content: '';
+					border-top: 2px solid #b8b8b8;
+					border-left: 2px solid #b8b8b8;
+					display: block;
+					width: 8px;
+					height: 8px;
+					margin: auto;
+					position: absolute;
+					top: 50%;
+					margin-top: -4px;
+					left: 50%;
+					margin-left:-4px;
+					-webkit-transform: rotate(-45deg);
+					-ms-transform: rotate(-45deg);
+					transform: rotate(-45deg);
+				}
+			}
+		}
+		.closeButton {
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			top: 50px;
+			left: 0;
+			background: $blue;
+			cursor: pointer;
+			opacity: 0;
+			transition: all 300ms ease-in-out;
+			.closeButton-in {
+				display: inline-block;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -17px 0 0 -17px;
+				width: 34px;
+				height: 34px;
+				transform: rotate(45deg);
+				&:before, &:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 15px;
+					left: 6px;
+					width: 20px;
+					height: 2px;
+					background-color: $white;
+				}
+				&:after {
+					width: 2px;
+					height: 20px;
+					top: 6px;
+					left: 15px;
+				}
+			}
+		}
+		.subPageText,
+		.pageLogo {
+			height: $menu-header-height;
+			width: $menu-width-small;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 0;
+			text-align: center;
+			cursor: pointer;
+			line-height: $menu-header-height;
+			@media screen and (min-width: 550px) {
+				width: $menu-width;
+			}
+		}
+
+        .subPageText {
+            color: $white;
+        }
+	}
+	.offCanvasMenuFooter {
+		background: $menu-color;
+		position: absolute;
+		width: 100%;
+		height: $menu-footer-height;
+		bottom: 0;
+		left: 0;
+		z-index: 99;
+		border-top: 1px solid $menu-border;
+		text-align: center;
+		padding: 0 20px;
+		background-size: 30px;
+		border-right: 1px solid #e6e6e6;
+		span {
+			display: none;
+		}
+
+		.button-path{
+			height: $menu-footer-height;
+			width: 50%;
+			display: inline-block;
+		}
+
+		.button-path {
+			background: url(../../images/mask/phone-call.svg) no-repeat center;
+			background-size: 25px;
+			span {
+				display: none;
+			}
+		}
+		//<< chotes
+	}
+}
+
+.offCanvasMenu-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	left: 0;
+	top: 0;
+	z-index: 100;
+	display: none;
+}
+
+body.offCanvasMenu-open {
+	overflow-y: hidden;
+	.offCanvasMenu {
+		&.offCanvasMenu-left {
+			transform: translateX($menu-width-small);
+			-webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+			-moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+			box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+		}
+		&.offCanvasMenu-right {
+			transform: translateX(-$menu-width-small);
+			-webkit-box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+			-moz-box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+			box-shadow: -5px 0px 5px 0px rgba(0, 0, 0, 0.25);
+		}
+		@media screen and (min-width: 550px){
+			&.offCanvasMenu-left {
+				transform: translateX($menu-width);
+			}
+			&.offCanvasMenu-right {
+				transform: translateX(-$menu-width);
+			}
+		}
+		.offCanvasMenuHeader .closeButton{
+			left:-50px;
+			opacity: 1;
+		}
+	}
+	.offCanvasMenu-overlay {
+		display: block;
+	}
+}
