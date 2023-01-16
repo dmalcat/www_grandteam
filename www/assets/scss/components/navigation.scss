@@ -53,5 +53,8 @@
 		font-size: 18px;
 		text-decoration: none;
 		@extend .trans;
+		img + span {
+			display: none;
+		}
 	}
 }
