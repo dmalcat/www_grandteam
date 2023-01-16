@@ -1,5 +1,5 @@
-{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Freshbang repository{/ifset}{/define}
-{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}The Universe started with The Big Bang. So every SFN project should start with The Fresh Bang.{/ifset}{/define}
+{define fullTitle}{ifset #metaTitle}{include metaTitle|striptags|trim|strip}{else}Grandteam.cz{/ifset}{/define}
+{define fullDesc}{ifset #metaDescription}{include metaDescription|striptags|trim|strip}{else}Grand Asset Management s.r.o. je zprostředkovatelská společnost působící na českém a slovenském finančním trhu, která sdružuje odborníky a specialisty z různých odvětví finanční sféry, kteří mají dlouholeté zkušenosti v oboru.{/ifset}{/define}
 
 <!DOCTYPE html>
 <html lang="cs">
@@ -14,7 +14,7 @@
 	<meta property="og:title" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Grandteam.cz" />
 	<meta property="og:url" content="{plink //this}" />
 	<meta property="og:type" content="website" />
-	<meta property="og:image" content="{$baseUrl}/www/assets/images/ogimage-.png" />
+	<meta property="og:image" content="{$baseUrl}/www/assets/images/content/og-image.png" />
 	<meta property="og:image:width" content="600" />
 	<meta property="og:image:height" content="315" />
 	<meta property="og:site_name" content="{ifset title}{include title|striptags|trim|strip} | {/ifset}Grandteam.cz" />
@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="{$basePath . '/www/assets/dist/css/3-core.min.css'|asset}">
 	<link rel="stylesheet" href="{$basePath . '/www/assets/dist/css/4-components.min.css'|asset}">
 	<link rel="stylesheet" href="{$basePath . '/www/assets/dist/css/5-ui.min.css'|asset}">
+	<link rel="stylesheet" href="{$basePath . '/www/assets/cookie-consent/dist/css/cookies.min.css'|asset}">
 
 	{* JS files *}
 	<script src="{$basePath . '/www/assets/dist/js/jquery-3.5.1.min.js'|asset}"></script>
@@ -41,6 +42,7 @@
 	<script src="{$basePath . '/www/assets/dist/js/offCanvasMenu.min.js'|asset}"></script>
 	<script src="{$basePath . '/www/assets/dist/js/smooth-scroll.min.js'|asset}"></script>
 	<script src="{$basePath . '/www/assets/js/libs/slick.min.js'|asset}"></script>
+	<script defer src="{$basePath . '/www/assets/cookie-consent/dist/js/cookies.min.js'|asset}"></script>
 	<script src="{$basePath . '/www/assets/dist/js/main.min.js'|asset}"></script>
 
 	{include 'includes/tracking/googleAnalytics.latte'}
@@ -58,9 +60,6 @@
 	</main>
 
 	{include 'includes/footer.latte'}
-
-	{* Cookie component *}
-	{control cookieAgreement}
 
 	<div id="overlay">
 		<div class="navigation navigation--mobile">

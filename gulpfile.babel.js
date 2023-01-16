@@ -40,6 +40,11 @@ const paths = {
 			main: assetsPath + '/scss/ui/main.scss',
 			src: assetsPath + '/scss/ui/**/*.scss',
 			dest: assetsPath + '/dist/css/'
+		},
+		cookies: {
+			main: assetsPath + '/cookie-consent/styles/cookieconsent.scss',
+			src: assetsPath + '/cookie-consent/styles/*.scss',
+			dest: assetsPath + '/cookie-consent/dist/css/'
 		}
 	},
 	scripts: {
@@ -56,6 +61,13 @@ const paths = {
 			assetsPath + '/js/main.js'
 		],
 		dest: assetsPath + '/dist/js/'
+	},
+	cookieScripts: {
+		src: [
+			assetsPath + '/cookie-consent/js/cookieconsent.js',
+			assetsPath + '/cookie-consent/js/cookieconsent-init.js'
+		],
+		dest: assetsPath + '/cookie-consent/dist/js'
 	}
 };
 
@@ -124,6 +136,19 @@ export function uiStyles() {
 		.pipe(gulp.dest(paths.styles.ui.dest));
 }
 
+export function cookieStyles() {
+	return gulp.src(paths.styles.cookies.main)
+		.pipe(sourcemaps.init())
+		.pipe(sass())
+		.pipe(cleanCSS())
+		.pipe(rename({
+			basename: 'cookies',
+			suffix: '.min'
+		}))
+		.pipe(sourcemaps.write(''))
+		.pipe(gulp.dest(paths.styles.cookies.dest));
+}
+
 export function scripts() {
 	return gulp.src(paths.scripts.src)
 		.pipe(babel({compact: false}))
@@ -133,17 +158,29 @@ export function scripts() {
 		.pipe(gulp.dest(paths.scripts.dest));
 }
 
+export function cookieScripts() {
+	return gulp.src(paths.cookieScripts.src)
+		.pipe(babel({compact: false}))
+		.pipe(uglify())
+		.pipe(rename({suffix: '.min'}))
+		.pipe(concat('cookies.min.js'))
+		.pipe(gulp.dest(paths.cookieScripts.dest));
+}
+
+
 function watchFiles() {
 	gulp.watch(paths.styles.vendor.src, vendorStyles);
 	gulp.watch(paths.styles.document.src, documentStyles);
 	gulp.watch(paths.styles.core.src, coreStyles);
 	gulp.watch(paths.styles.components.src, componentStyles);
 	gulp.watch(paths.styles.ui.src, uiStyles);
+	gulp.watch(paths.styles.cookies.src, cookieStyles);
 	gulp.watch(paths.scripts.src, scripts);
+	gulp.watch(paths.cookieScripts.src, cookieScripts);
 }
 
 export { watchFiles as watch };
 
-const build = gulp.series(clean, gulp.parallel(vendorStyles, documentStyles, coreStyles, componentStyles, uiStyles, scripts));
+const build = gulp.series(clean, gulp.parallel(vendorStyles, documentStyles, coreStyles, componentStyles, uiStyles, cookieStyles, scripts, cookieScripts));
 
 export default build;

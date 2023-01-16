@@ -8,17 +8,13 @@ use Freshio\Localization\Localization;
 use Freshio\Mailing\Mailing;
 use Freshio\Presets\Presets;
 use Freshio\Utils\AssetVersioning;
-use FreshBangApp\Components\CookieAgreement\CookieAgreementControl;
-use FreshBangApp\Components\CookieAgreement\CookieAgreementControlFactory;
 use Nette;
 use Nette\Application\UI\Template;
 
 
 abstract class BasePresenter extends Nette\Application\UI\Presenter
 {
-	/** @var CookieAgreementControlFactory @inject */
-	public CookieAgreementControlFactory $cookieAgreementControlFactory;
-
+	
 	/** @var AssetVersioning @inject */
 	public AssetVersioning $assetVersioning;
 
@@ -41,10 +37,6 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 	public function startup(): void
 	{
 		parent::startup();
-
-		// cookie path
-		$basePath = $this->getHttpRequest()->getUrl()->getBasePath();
-		$this->session->setCookieParameters($basePath);
 
 		// localization
 		$loc = $this->localization;
@@ -81,15 +73,6 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
 		$tpl->googleAnalyticsCodeSK = $this->presets->getValueIfExists('analytics.googleAnalytics.sk') ?: null;
 
 		return $tpl;
-	}
-
-
-	/**
-	 * @return CookieAgreementControl
-	 */
-	protected function createComponentCookieAgreement(): CookieAgreementControl
-	{
-		return $this->cookieAgreementControlFactory->create();
 	}
 
 
