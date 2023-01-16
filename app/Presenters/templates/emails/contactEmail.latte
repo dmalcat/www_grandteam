@@ -24,7 +24,7 @@
 		<tr n:if="$company">
 			<td></td>
 			<td>
-				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Jméno: {$company}</p>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Společnost: {$company}</p>
 			</td>
 		</tr>
 		<tr n:if="$email">
@@ -43,6 +43,7 @@
 			<td></td>
 			<td>
 				<p style="font-family: Arial; font-size: 10px; line-height: 20px;"><br> Odesláno: {date('d. m. Y / H:i:s')}<br><br></p>
+				<p style="font-family: Arial; font-size: 10px; line-height: 20px;">{$url}</p>
 			</td>
 		</tr>
 	</table>

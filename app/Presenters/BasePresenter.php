@@ -127,6 +127,7 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
      */
     protected function createComponentContactForm()
     {
+        $this->contactForm->url = $this->getHttpRequest()->getUrl();
         $form = $this->contactForm->create();
         $form->onSuccess[] = function ($form) {
             $form->getPresenter()->flashMessage('Vaše zpráva byla úspěšně odeslána.', 'success');

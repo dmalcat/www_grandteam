@@ -1,0 +1,19 @@
+.flash {
+  height: 60px;
+  padding: 0 20px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #7ee897;
+  .wrapper {
+    padding: 0;
+    position: relative;
+  }
+
+  .info, .success {
+    background-color: #7ee897;
+  }
+
+  .warning {
+    background-color: #c72d36;
+  }
+}

@@ -11,6 +11,8 @@ use Tracy\Debugger;
 
 class ContactForm
 {
+    public $url;
+
 
 	public function __construct()
 	{
@@ -62,6 +64,7 @@ class ContactForm
             $values->created = date("Y-m-d H:i:s",strtotime('now'));
 
             if (strlen($values->surname) == 0) {
+                $values->url = $this->url;
                 $latte = new \Latte\Engine;
                 $mail = new \Nette\Mail\Message;
                 $mail->setFrom('grandteam.cz <no-reply@grandteam.cz>')
