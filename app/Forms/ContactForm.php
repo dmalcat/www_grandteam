@@ -68,7 +68,8 @@ class ContactForm
                 $latte = new \Latte\Engine;
                 $mail = new \Nette\Mail\Message;
                 $mail->setFrom('grandteam.cz <no-reply@grandteam.cz>')
-                    ->addTo('radujko@mediastudio.cz')
+                    ->addTo('info@grandteam.cz')
+                    ->addBcc('davidmalcat@gmail.com')
                     ->setSubject('Kontaktní formulář | grandteam.cz')
                     ->setHtmlBody(
                         $latte->renderToString(__DIR__.'/../Presenters/templates/emails/contactEmail.latte', $values)
