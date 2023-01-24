@@ -2,7 +2,7 @@ parameters:
 
 	presets:
 		contact:
-			mail: 'www@freshnet.cz'
+			mail: 'davidmalcat@gmail.com'
 			phone: '+420777111222333'
 
 		analytics:
@@ -21,10 +21,10 @@ parameters:
 	mailing:
 		imageBasePath: '%appDir%/../www/assets/images'
 
-		senders: 'MAIL SENDER <www@freshnet.cz>'
+		senders: 'MAIL SENDER <davidmalcat@gmail.com>'
 
 		groups:
-			admins: [ 'www@freshnet.cz' ]
+			admins: [ 'davidmalcat@gmail.com' ]
 
 		mails:
 			contact:
