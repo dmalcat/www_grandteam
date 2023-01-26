@@ -27,6 +27,11 @@
 		}
 	}
 
+	.form__surname {
+		position: absolute;
+		left: -9999px;
+	}
+
 	.form__control {
 		display: flex;
 		flex-direction: column;
