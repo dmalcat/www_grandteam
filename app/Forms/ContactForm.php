@@ -44,8 +44,10 @@ class ContactForm
 			->setAttribute('class', 'form__input');
 
 		$form->addText('surname', 'Příjmení')
-            ->setAttribute('class', 'form__input')
-            ->setAttribute('placeholder', 'Příjmení');
+            ->setAttribute('class', 'form__input');
+
+        $form->addTextArea('message', 'Zpráva')
+            ->setAttribute('class', 'form__textarea');
 		
 		$form->addSubmit('send', 'Odeslat')
 			 ->setAttribute('class', 'button button--white');
