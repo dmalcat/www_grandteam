@@ -52,9 +52,13 @@
 	}
 
 	.tile__headline {
+		display: block;
 		font-size: 1.5rem;
 		font-weight: bold;
 		color: $black;
+		& + .tile__link {
+			margin-top: 10px;
+		}
 	}
 
 	.tile__copy {
@@ -62,6 +66,7 @@
 	}
 
 	.tile__link {
+		display: block;
 		font-weight: bold;
 		color: $blue;
 		text-decoration: none;
@@ -76,4 +81,17 @@
 	.tile__link {
 		color: $white;
 	}
+}
+
+
+ 
+html[lang*="de"] #comp-l7z6wx51,
+html[lang*="de"] #comp-l7z6x5ll,
+html[lang*="de"] #comp-l8pxqvdh,
+html[lang*="de"] #comp-l8pxqvcm,
+html[lang*="de"] #comp-l8pyj1jv,
+html[lang*="de"] #comp-l8pyj1iv,
+html[lang*="de"] #comp-l7z6y2dl,
+html[lang*="de"] #comp-l7z6y2a7 {
+	display: none;
 }
