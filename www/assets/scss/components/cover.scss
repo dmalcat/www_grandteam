@@ -3,6 +3,10 @@
 .cover {
 	position: relative;
 	margin-bottom: 0;
+	.cover__slide {
+		position: relative;
+	}
+
 	.cover__image {
 		display: block;
 		max-width: 1920px;
@@ -33,13 +37,17 @@
 			font-size: 45px;
 		}
 
+		@include max940px {
+			margin-bottom: 30px;
+		}
+
 		@include max640px {
 			font-size: 37.5px;
 			margin-bottom: 30px;
 		}
 
 		@include max480px {
-			font-size: 30px;
+			font-size: 26px;
 			margin-bottom: 20px;
 		}
 

@@ -8,11 +8,12 @@ $(function() {
 		openMenu: '#hamburger'
 	});
 
-	$('#hp-news').slick({
+	$('#hp-slider').slick({
 		infinite: true,
-		speed: 300,
-		slidesToShow: 3,
-		centerMode: true,
-		variableWidth: true
+		autoplay: false,
+		autoplaySpeed: 1000,
+		fade: true,
+		arrows: false,
+		dots: true
 	});
 });
