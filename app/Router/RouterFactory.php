@@ -292,6 +292,12 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/opravne-a-dodatecne-danove-priznani', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'danovePriznani',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',
