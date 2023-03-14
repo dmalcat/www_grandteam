@@ -4,9 +4,15 @@
 	padding-top: 120px;
 	.articles__row {
 		flex-flow: unset;
-		margin-bottom: 120px;
+		margin-bottom: 20px;
 		@include max940px {
 			flex-direction: column;
+		}
+	}
+
+	.articles__row--signature {
+		.articles__col {
+			padding: 0;
 		}
 	}
 
@@ -48,6 +54,12 @@
 			@include max940px {
 				padding: 30px;	
 			}
+		}
+	}
+
+	.articles__row--signature {
+		.articles__col--copy {
+			padding: 0 90px; 
 		}
 	}
 
@@ -109,10 +121,6 @@
 
 	.articles__block--center {
 		text-align: center;
-	}
-
-	.articles__block--contact {
-		
 	}
 
 	.articles__col--copy {

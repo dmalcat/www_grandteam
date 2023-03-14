@@ -10,8 +10,8 @@ $(function() {
 
 	$('#hp-slider').slick({
 		infinite: true,
-		autoplay: false,
-		autoplaySpeed: 1000,
+		autoplay: true,
+		autoplaySpeed: 3000,
 		fade: true,
 		arrows: false,
 		dots: true

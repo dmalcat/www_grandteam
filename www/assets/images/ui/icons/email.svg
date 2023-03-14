@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="576px" height="576px" viewBox="0 0 576 576" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>email</title>
+    <g id="GPA-2022" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="email">
+            <rect id="Rectangle" fill="#9B9B9B" fill-rule="nonzero" x="0" y="0" width="576" height="576" rx="120"></rect>
+            <polygon id="path1408" stroke="#232323" stroke-width="30.655" points="492.076 438.591111 492.076 137.781111 83.366 137.781111 83.366 438.591111"></polygon>
+            <path d="M87.166,141.611111 L263.486,320.281111 C276.556,333.451111 300.336,333.291111 313.126,320.401111 L489.326,143.051111" id="path1412" stroke="#232323" stroke-width="30.655"></path>
+            <line x1="93.216" y1="428.691111" x2="228.316" y2="290.581111" id="path1414" stroke="#232323" stroke-width="30.655"></line>
+            <line x1="480.676" y1="427.091111" x2="349.216" y2="292.501111" id="path1416" stroke="#232323" stroke-width="30.655"></line>
+        </g>
+    </g>
+</svg>

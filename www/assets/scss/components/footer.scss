@@ -6,4 +6,107 @@
 		color: $white;
 		margin-bottom: 0;
 	}
+
+	.footer__row--info {
+		display: flex;
+		justify-content: space-between;
+		color: #9b9b9b;
+		font-size: 14px;
+		margin-bottom: 3rem;
+	}
+
+	.footer__navIn {
+		display: flex;
+		gap: 3rem;
+	}
+
+	.footer__nav {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+		
+		li {
+			margin-bottom: 10px;
+		}
+
+		a {
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			@extend .trans;
+			&:hover {
+				border-color: $white;
+			}
+		}
+	}
+
+	.footer__links {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.footer__headline {
+		display: block;
+		margin-bottom: 1.5rem;
+		font-size: 17px;
+		font-weight: 500;
+		color: $white;
+	}
+
+	.footer__link {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		margin-bottom: 10px;
+		span {
+			border-bottom: 1px solid transparent;
+			@extend .trans;
+		}
+
+		&:hover {
+			span {
+				border-bottom: 1px solid $white;
+			}
+		}
+
+		svg {
+			display: inline-flex;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+		}
+	}
+
+	.footer__logo {
+		max-width: 200px;
+		width: 100%
+	}
+
+	.footer__link--email {
+		rect {
+			@extend .trans;
+		}
+
+		&:hover {
+			rect {
+				fill: $white;
+			}
+		}
+	}
+
+	.footer__link--facebook {
+		path {
+			@extend .trans;
+		}
+
+		&:hover {
+			path {
+				fill: $white;
+			}
+		}
+	}
+
+	.footer__address {
+		font-style: normal;
+		line-height: 2;
+	}
 }

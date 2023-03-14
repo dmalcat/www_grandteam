@@ -7,7 +7,7 @@ parameters:
 
 		analytics:
 			googleAnalytics:
-				cz: 'cz-XXXXXXXX'
+				cz: 'G-3FXWB0D0XH'
 				sk: 'sk-XXXXXXXX'
 
 	database:
