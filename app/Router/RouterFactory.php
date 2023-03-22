@@ -304,6 +304,12 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/ochrana-osobnich-udaju', [
+					'presenter' 	=> 'About',
+					'action' 		=> 'privacyPolicy',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/partneri', [
 					'presenter' 	=> 'Partners',
 					'action' 		=> 'default',
