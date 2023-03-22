@@ -298,6 +298,12 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/inflace-je-vetsi-strasak-nez-krachy-bank', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'inflaceJeVetsiStrasak',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',

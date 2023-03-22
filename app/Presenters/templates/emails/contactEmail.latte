@@ -21,10 +21,22 @@
 				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Jméno: {$name}</p>
 			</td>
 		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Příjmení: {$surname}</p>
+			</td>
+		</tr>
 		<tr n:if="$company">
 			<td></td>
 			<td>
 				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Společnost: {$company}</p>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>
+				<p style="font-family: Arial; font-size: 13px; line-height: 20px;">Sídlo/místo bydliště: {$place}</p>
 			</td>
 		</tr>
 		<tr n:if="$email">
@@ -53,6 +65,5 @@
 			</td>
 		</tr>
 	</table>
-    
 </body>
 </html>

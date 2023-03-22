@@ -15,24 +15,38 @@
 					<label n:name=name class="form__label">Jméno</label>
 				</div>
 				<div class="form__control">
+					<input n:name=surname type="text" class="form__input">
+					<span class="form__highlight"></span>
+					<span class="form__bar"></span>
+					<label n:name=surname class="form__label">Příjmení</label>
+				</div>
+			</div>
+			<div class="form__group">
+				<div class="form__control">
 					<input n:name=phone type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
 					<label n:name=phone class="form__label">Telefon</label>
 				</div>
-			</div>
-			<div class="form__group">
 				<div class="form__control">
 					<input n:name=email type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
 					<label n:name=email class="form__label">Email</label>
 				</div>
+			</div>
+			<div class="form__group">
 				<div class="form__control">
 					<input n:name=company type="text" class="form__input">
 					<span class="form__highlight"></span>
 					<span class="form__bar"></span>
 					<label n:name=company class="form__label">Společnost</label>
+				</div>
+				<div class="form__control">
+					<input n:name=place type="text" class="form__input">
+					<span class="form__highlight"></span>
+					<span class="form__bar"></span>
+					<label n:name=place class="form__label">Sídlo/místo bydliště</label>
 				</div>
 			</div>
 			<div class="form__group form__group--1c">
@@ -43,13 +57,11 @@
 					<label n:name=message class="form__label">Zpráva</label>
 				</div>
 			</div>
-			<div class="form__group form__group--1c form__surname">
-				<div class="form__control">
-					<input n:name=surname type="text" class="form__input">
-					<span class="form__highlight"></span>
-					<span class="form__bar"></span>
-					<label n:name=surname class="form__label">Příjmení</label>
-				</div>
+			<div class="form__control form__control--city">
+				<input n:name=city type="text" class="form__input">
+				<span class="form__highlight"></span>
+				<span class="form__bar"></span>
+				<label n:name=city class="form__label">Město</label>
 			</div>
 			<div class="form__group form__group--button">
 				<input n:name=send class="button button--white" value="Odeslat" />

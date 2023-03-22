@@ -39,6 +39,9 @@ class ContactForm
 
 		$form->addText('phone', 'Telefon')
 			->setAttribute('class', 'form__input');
+		
+		$form->addText('city', 'Město')
+			->setAttribute('class', 'form__input');
 
 		$form->addText('company', 'Společnost')
 			->setAttribute('class', 'form__input');
@@ -68,12 +71,12 @@ class ContactForm
 		try {
             $values->created = date("Y-m-d H:i:s",strtotime('now'));
 
-            if (strlen($values->surname) == 0) {
+            if (strlen($values->city) == 0) {
                 $values->url = $this->url;
                 $latte = new \Latte\Engine;
                 $mail = new \Nette\Mail\Message;
                 $mail->setFrom('grandteam.cz <no-reply@grandteam.cz>')
-                    ->addTo('info@grandteam.cz')
+					->addTo('info@grandteam.cz')
                     ->addBcc('davidmalcat@gmail.com')
                     ->setSubject('Kontaktní formulář | grandteam.cz')
                     ->setHtmlBody(
