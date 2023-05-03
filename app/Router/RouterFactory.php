@@ -304,6 +304,18 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/plosne-zvyseni-veku-odchodu-do-penze-vlada-nechce', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'duchody',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/akcie-nebo-dluhopisy', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'investovani',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',
