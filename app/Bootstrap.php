@@ -16,7 +16,7 @@ class Bootstrap
 		//$configurator->setDebugMode(false);
 		//$configurator->setDebugMode('77.104.210.51');
 
-		$configurator->enableDebugger(__DIR__ . '/../log', 'webari@freshnet.cz');
+		$configurator->enableDebugger(__DIR__ . '/../log', 'davidmalcat@gmail.com');
 
 		$configurator->enableTracy(__DIR__ . '/../log');
 

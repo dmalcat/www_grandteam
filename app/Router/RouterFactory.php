@@ -310,6 +310,12 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/duchodova-reforma', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'duchodovaReforma',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/novinky/akcie-nebo-dluhopisy', [
 					'presenter' 	=> 'News',
 					'action' 		=> 'investovani',
