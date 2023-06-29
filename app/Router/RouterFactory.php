@@ -322,6 +322,12 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/dalsi-krize-na-obzoru-prazdne-kancelare-a-drahe-pujcky-drti-globalni-trh-s-komercnimi-realitami', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'drahePujcky',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',
