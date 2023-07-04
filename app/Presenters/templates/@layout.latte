@@ -44,6 +44,7 @@
 	<link rel="stylesheet" href="{$basePath . '/www/assets/dist/css/4-components.min.css'|asset}">
 	<link rel="stylesheet" href="{$basePath . '/www/assets/dist/css/5-ui.min.css'|asset}">
 	<link rel="stylesheet" href="{$basePath . '/www/assets/cookie-consent/dist/css/cookies.min.css'|asset}">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 	{* JS files *}
 	<script src="{$basePath . '/www/assets/dist/js/jquery-3.5.1.min.js'|asset}"></script>
@@ -54,12 +55,14 @@
 	<script src="{$basePath . '/www/assets/dist/js/smooth-scroll.min.js'|asset}"></script>
 	<script src="{$basePath . '/www/assets/js/libs/slick.min.js'|asset}"></script>
 	<script defer src="{$basePath . '/www/assets/cookie-consent/dist/js/cookies.min.js'|asset}"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="{$basePath . '/www/assets/dist/js/main.min.js'|asset}"></script>
 
 	{include 'includes/tracking/googleAnalytics.latte'}
 </head>
 
 <body>
+
 	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">
 		<p>{$flash->message}</p>
 	</div>

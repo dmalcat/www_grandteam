@@ -1,6 +1,10 @@
 $(function() {
 	replaceSVG();
 
+	AOS.init();
+	
+	window.addEventListener('load', AOS.refresh);
+
 	var scroll = new SmoothScroll('a[href*="#"]');
 
 	$("#navigation").offCanvasMenu({

@@ -63,7 +63,7 @@ cc.run({
     languages: {
         'cs': {
             consent_modal: {
-                title: 'Grand Asset Team používá cookies.',
+                title: 'Grand Asset Management používá cookies.',
                 description: 'Jsou to malé soubory, díky kterým vám web nabídne jen takový obsah, který očekáváte, nebude vás obtěžovat věcmi, které vás nezajímají a vy tak najdete to, co hledáte. Aby to tak opravdu bylo, potřebujeme od vás souhlas s ukládáním cookies do vašeho prohlížeče.',
                 primary_btn: {
                     text: 'OK, souhlasím',
@@ -116,7 +116,7 @@ cc.run({
         },
         'en': {
             consent_modal: {
-                title: 'Golf Resort uses cookies.',
+                title: 'Grand Asset Management uses cookies.',
                 description: 'They are small files that allow the site to offer you only the content you expect, not bother you with things that don\'t interest you, so you can find what you\'re looking for. For this to be true, we need your consent to store cookies in your browser.',
                 primary_btn: {
                     text: 'OK, I agree',
