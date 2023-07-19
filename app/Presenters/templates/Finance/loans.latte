@@ -6,7 +6,7 @@
 <section class="cover">
 	<div class="cover__visual">
 		<div class="cover__visual-inner">
-			<picture class="cover__image"  data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0">
+			<picture class="cover__image" data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0">
 				{*}
 				<source srcset="{$basePath}/www/assets/images/content/cover/cover_375.webp" media="(max-width: 375px)" type="image/webp">
 				<source srcset="{$basePath}/www/assets/images/content/cover/cover_375.png" media="(max-width: 375px)" type="image/png">
@@ -29,11 +29,11 @@
 	</div>
 
 	<div class="cover__wrapper wrapper">
-		<h1 n:block=title>
+		<h1 n:block=title data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="500">
 			Spotřebitelské úvěry
 		</h1>
 		<div class="cover__button">
-			<a class="button button--blue" href="#kontaktujte-nas">Sjednat</a>
+			<a class="button button--blue" href="#kontaktujte-nas" data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="500">Sjednat</a>
 		</div>
 	</div>
 </section>
@@ -42,7 +42,7 @@
 	<div class="articles__wrapper wrapper">
 		<div class="articles__block articles__block--blue">
 			<div class="articles__row row">
-				<div class="articles__col articles__col--copy">
+				<div class="articles__col articles__col--copy" data-aos="fade-right" data-aos-duration="750" data-aos-delay="200">
 					<p>
 						Neúčelové osobní půjčky, které&nbsp;mohou být využity na&nbsp;nepodnikatelské účely, ve&nbsp;většině případů na&nbsp;nákup spotřebního zboží, automobilu, vybavení domácnosti apod. Tímto typem úvěru se&nbsp;většinou řeší půjčky do&nbsp;1 milionu Kč.
 					</p>
@@ -50,37 +50,13 @@
 						Jedná se&nbsp;o&nbsp;odloženou platbu, peněžitou zápůjčku, úvěr nebo obdobnou finanční službu, které&nbsp;je&nbsp;poskytovaná nebo zprostředkovaní spotřebiteli.
 					</p>
 				</div>
-				<div class="articles__col articles__col--image">
+				<div class="articles__col articles__col--image" data-aos="fade-left" data-aos-duration="750" data-aos-delay="200">
 					<img class="articles__image" src="{$basePath}/www/assets/images/content/subpages/finance/loans/1.png" alt="">
 				</div>
 			</div>
 		</div>
-		{*		<div class="articles__block">*}
-{*            <div class="articles__row row">*}
-{*				<div class="articles__col articles__col--copy">*}
-{*                    <p>*}
-{*						Financování vlastního bydlení je&nbsp;zásadním životním mezníkem, jehož realizace si žádá důkladnou přípravu, se&nbsp;kterou je&nbsp;spojena i&nbsp;značná časová náročnost. Pokud se&nbsp;v&nbsp;bankovním sektoru neorientujete, může samotné získání úvěru zbrzdit například nečekaná komplikace, na&nbsp;kterou Vás nikdo neupozornil.*}
-{*					</p>*}
-
-{*					<h3>Typy spotřebitelských úvěrů na&nbsp;bydlení:</h3>*}
-{*					*}
-{*					<ul>*}
-{*						<li>Klasický (hypoteční) úvěr na&nbsp;bydlení</li>*}
-{*						<li>„Bez dokládání příjmů“</li>*}
-{*						<li>Americká hypotéka</li>*}
-{*						<li>Předhypoteční úvěr</li>*}
-{*						<li>Hypotéka s&nbsp;odloženou splátkou jistiny</li>*}
-{*						<li>Hypoteční úvěr 2v1</li>*}
-{*						<li>Variabilní hypotéka neboli hypoteční kontokorent (floatová hypotéka)</li>*}
-{*						<li>A další...…</li>*}
-{*					</ul>					*}
-
-{*                        *}
-{*                </div>*}
-{*            </div>*}
-{*        </div>*}
-
-		<div class="articles__block articles__block--center">
+		
+		<div class="articles__block articles__block--center" data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="200">
 			<p class="perex">
 				V případě zájmu o&nbsp;další informace nás <br>
 				kontaktujte skrze formulář níže.
@@ -92,7 +68,6 @@
 		</div>
 	</div>
 </section>
-
 
 
 {include '../includes/form.latte'}
