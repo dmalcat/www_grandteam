@@ -328,6 +328,30 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/cestovni-pojisteni', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'cestovniPojisteni',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/pojisteni-domacnosti', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'pojisteniDomacnosti',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/ceny-nemovitosti', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'cenyNemovitosti',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/ceny-energii-budou-nadale-klesat', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'cenyEnergii',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',

@@ -4,18 +4,22 @@
     <div class="cover__visual">
         <div class="cover__visual-inner">
             <picture class="cover__image"  data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0">
-                <source srcset="{$basePath}/www/assets/images/content/news/drahe-pujcky.png" media="(max-width: 1920px)" type="image/png">
+                {*}
+				<source srcset="{$basePath}/www/assets/images/content/news/drahe-pujcky.png" media="(max-width: 1920px)" type="image/png">
 				<img src="{$basePath}/www/assets/images/content/news/drahe-pujcky.png" alt="">
-            </picture>
+				{*}
+				<source srcset="{$basePath}/www/assets/images/content/news/ceny-energii.png" media="(max-width: 1920px)" type="image/png">
+				<img src="{$basePath}/www/assets/images/content/news/ceny-energii.png" alt="">
+			</picture>
         </div>
     </div>
 
     <div class="cover__wrapper wrapper">
         <h1 n:block=title>
-            Další krize na obzoru. Prázdné kanceláře a&nbsp;drahé půjčky drtí globální trh s&nbsp;komerčními realitami
+            Ceny energií budou nadále klesat
         </h1>
 		<div class="cover__button">
-			<a class="button button--blue" n:href="News:drahePujcky">Číst dál</a>
+			<a class="button button--blue" n:href="News:cenyEnergii">Číst dál</a>
 		</div>
     </div>
 </section>
@@ -24,6 +28,70 @@
 	<div class="articles__wrapper wrapper">
 		<div class="article__block articles__block--blue">
 
+			<div class="articles__row row">
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/www/assets/images/content/news/tiles/ceny-nemovitosti.jpg" alt="">
+				</div>
+				<div class="articles__col articles__col--copy">
+					<h1>Ceny nemovitostí míří nahoru</h1>
+					
+					<p>
+						Pro ty, kdo touží po vlastním bydlení, platí jedno kruté rčení: Levněji už bylo. V málokterém oboru platí tak nekompromisně, že se nevyplatí čekat. Teď navíc začal čas běžet zájemcům o dům či byt mnohem rychleji, protože předpovědi lidí z oboru nevypadají pro kupující vůbec hezky.
+					</p>
+
+					<div>
+						<a n:href="News:cenyNemovitosti" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="articles__row row">
+				<div class="articles__col articles__col--copy">
+					<h1>Češi podceňují pojištění domácnosti</h1>
+					
+					<p>
+						Již 176 požárů se škodou přes milion korun řešili hasiči od začátku roku. Podle posledních dat Hasičského záchranného sboru tak připadá v průměru na den více než jeden takový požár. Za první čtvrtletí bylo požárů v domácnostech 1742. Celková škoda přesáhla 207 milionů korun.
+					</p>
+
+					<div>
+						<a n:href="News:pojisteniDomacnosti" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/www/assets/images/content/news/tiles/pojisteni-domacnosti.jpg" alt="">
+				</div>
+			</div>
+			
+			<div class="articles__row row">
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/www/assets/images/content/news/tiles/cestovni-pojisteni.jpg" alt="">
+				</div>
+				<div class="articles__col articles__col--copy">
+					<h1>Pojištění storna zájezdu s cestovní kanceláří</h1>
+					<p>
+						Řada lidí nenechává nic náhodě a cestovní služby si pořizuje v předstihu. To se však nemusí vyplatit ve chvíli, kdy z nejrůznějších důvodů nakonec na dovolenou nemůžete odjet. Pro takovou nepříjemnost se hodí připojištění storna.
+					</p>
+					<div>
+						<a n:href="News:cestovniPojisteni" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="articles__row row">
+				<div class="articles__col articles__col--copy">
+					<h1>Další krize na trhu s komerčními realitami?</h1>
+					<p>
+						Světovou ekonomiku obchází nový strašák v podobě stoupajícího napětí na trhu s komerčními nemovitostmi, varuje agentura Bloomberg. 
+					</p>
+					<div>
+						<a n:href="News:drahePujcky" class="button button--blue">Číst dál</a>
+					</div>
+				</div>
+				<div class="articles__col articles__col--image">
+					<img class="articles__image" src="{$basePath}/www/assets/images/content/news/tiles/drahe-pujcky.jpg" alt="">
+				</div>
+			</div>
+			
 			<div class="articles__row row">
 				<div class="articles__col articles__col--image">
 					<img class="articles__image" src="{$basePath}/www/assets/images/content/news/tiles/duchodova-reforma.jpg" alt="">

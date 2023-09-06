@@ -7,6 +7,14 @@
 		margin-bottom: 0;
 	}
 
+	.footer__row {
+		flex-flow: row wrap;
+	}
+
+	.footer__col {
+		margin-bottom: 1.5rem;
+	}
+
 	.footer__row--info {
 		display: flex;
 		justify-content: space-between;

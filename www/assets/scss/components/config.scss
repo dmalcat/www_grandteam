@@ -1,0 +1,82 @@
+// Grid size
+$grid-max-width: 90rem;
+
+
+// Spaces
+$section-gutter: 120px;
+
+
+// Typography
+$base-font-size: 15px;
+$base-line-height: 1.5;
+
+$base-paragraph-size: 1rem;
+
+<picture class="cover__image"  data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0": 50px;
+$h1-font-size: 3rem;
+$h2-font-size: 2.25rem;
+$h3-font-size: 20px;
+$h4-font-size: 18px;
+
+$underlined-links: true;
+
+
+// Fonts
+$fonts-path: '../../fonts/';
+$images-path: '../../images/';
+$font-roboto: 'Montserrat', sans-serif;
+
+
+// Colors
+$white: #FFF;
+$black: #000;
+
+$base-text-color: $white;
+
+$light-blue: #f0f8ff;
+$blue: #0277ff;
+
+$light-gray: #8a8a8a;
+$gray: #8a8a8a;
+
+
+
+// Forms
+$form-group-gutter: 2rem;
+
+$form-input-padding-tops: 0.5rem;
+$form-input-padding-sides: 1rem;
+
+$form-input-border-radius: 0.5rem;
+$form-input-border-width: 1px;
+$form-input-border-color: $black;
+
+$form-input-text-size: $base-font-size;
+
+$form-input-background-color: transparent;
+$form-input-text-color: $black;
+
+
+// Common radius
+$base-radius: 0.5rem;
+$button-radius: 15px;
+
+// Header
+$header-bg-color: $white;
+
+
+// Hamburger
+$hamburger-breakpoint: 1090px;
+
+$hamburger-label-color: $black;
+$hamburger-line-color: $black;
+
+$hamburger-overlay-color: $black;
+$hamburger-overlay-item-color: $white;
+
+$hamburger-line-width: 45px;
+$hamburger-line-height: 3px;
+$hamburger-line-radius: 2.5px;
+$hamburger-line-gap: 7px;
+
+$hamburger-height: ($hamburger-line-height * 3) + $hamburger-line-gap * 2;
