@@ -352,6 +352,24 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/frankfurtska-burza-oziva', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'frankfurtskaBurza',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/plyn-na-burze-zdrazuje', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'plynZdrazuje',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/doplnkove-penzijni-sporeni-neni-pro-stare', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'doplnkovePenzijniSporeni',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',
