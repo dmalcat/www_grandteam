@@ -370,6 +370,18 @@ final class RouterFactory
 					'region' 		=> $region
 				]);
 
+				$router->addRoute($basePath . $region . '/novinky/rodicovska-davka-vzrostla', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'rodicovskaDavka',
+					'region' 		=> $region
+				]);
+
+				$router->addRoute($basePath . $region . '/novinky/nova-pravidla-pro-ridicsky-a-technicky-prukaz', [
+					'presenter' 	=> 'News',
+					'action' 		=> 'ridicskyPrukaz',
+					'region' 		=> $region
+				]);
+
 				$router->addRoute($basePath . $region . '/o-nas', [
 					'presenter' 	=> 'About',
 					'action' 		=> 'default',

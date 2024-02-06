@@ -8,6 +8,7 @@
 			<div class="cover__visual">
 				<div class="cover__visual-inner">
 					<picture class="cover__image"  data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0">
+						<source srcset="{$basePath}/www/assets/images/content/cover/cover-winter-1_1160.png" media="(max-width: 1160px)" type="image/png">
 						<source srcset="{$basePath}/www/assets/images/content/cover/cover-winter-1.png" media="(max-width: 1920px)" type="image/png">
 						<img src="{$basePath}/www/assets/images/content/cover/cover-winter-1.png" alt="">
 					</picture>
@@ -29,6 +30,7 @@
 			<div class="cover__visual">
 				<div class="cover__visual-inner">
 					<picture class="cover__image"  data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0">
+						<source srcset="{$basePath}/www/assets/images/content/cover/cover-winter-2_1160.png" media="(max-width: 1160px)" type="image/png">
 						<source srcset="{$basePath}/www/assets/images/content/cover/cover-winter-2.png" media="(max-width: 1920px)" type="image/png">
 						<img src="{$basePath}/www/assets/images/content/cover/cover-winter-2.png" alt="">
 					</picture>
@@ -38,7 +40,7 @@
 			<div class="cover__wrapper wrapper">
 				<h1>
 					Chcete vlastní bydlení <br>
-					<span class="bold">a potřebujete hypotéku?</span>
+					<span class="bold">a&nbsp;potřebujete hypotéku?</span>
 				</h1>
 				<div class="cover__button">
 					<a class="button button--blue" n:href="Finance:hypo">Zjistit více</a>
@@ -50,6 +52,7 @@
 			<div class="cover__visual">
 				<div class="cover__visual-inner">
 					<picture class="cover__image"  data-aos="fade-bottom" data-aos-duration="750" data-aos-delay="0">
+						<source srcset="{$basePath}/www/assets/images/content/cover/cover-winter-3_1160.png" media="(max-width: 1160px)" type="image/png">
 						<source srcset="{$basePath}/www/assets/images/content/cover/cover-winter-3.png" media="(max-width: 1920px)" type="image/png">
 						<img src="{$basePath}/www/assets/images/content/cover/cover-winter-3.png" alt="">
 					</picture>
@@ -93,7 +96,7 @@
 				<img class="tile__icon" src="{$basePath}/www/assets/images/ui/tiles/investovani.svg" alt="">
 				<span class="tile__headline">Investování</span>
 				<p class="tile__copy">
-					Rádi byste začali spořit, ale nevíte si rady? Poradíme s&nbsp;penzijním i&nbsp;stvebním pojištěním, ale i&nbsp;s&nbsp;dalšími investicemi.
+					Rádi byste začali spořit, ale nevíte si rady? Poradíme s&nbsp;penzijním i&nbsp;stavebním pojištěním, ale i&nbsp;s&nbsp;dalšími investicemi.
 				</p>
 				<span class="tile__link">Více</span>
 			</a>
@@ -145,20 +148,7 @@
 		<div class="news__wrapper wrapper">
 			<div class="news__row">
 				
-				
 				<span class="news__item">
-					<span class="news__inner">
-						<img class="news__image" src="{$basePath}/www/assets/images/content/news/tiles/ceny-plynu.png" alt="">
-						<span class="news__content">
-							<h1>
-								Plyn na burze <br> zdražuje
-							</h1>
-
-							<a n:href="News:plynZdrazuje" class="button button--blue">Číst dál</a>
-						</span>
-					</span>
-				</span>
-				<span class="news__item news__item--center">
 					<span class="news__inner">
 						<img class="news__image" src="{$basePath}/www/assets/images/content/news/tiles/doplnkove-penzijni-sporeni.png" alt="">
 						<span class="news__content">
@@ -170,16 +160,29 @@
 						</span>
 					</span>
 				</span>
-				<span class="news__item">
+				<span class="news__item news__item--center">
 					<span class="news__inner">
-						<img class="news__image" src="{$basePath}/www/assets/images/content/news/tiles/fankfurtska-burza.png" alt="">
+						<img class="news__image" src="{$basePath}/www/assets/images/content/news/tiles/ridicsky-prukaz.png" alt="">
 						<span class="news__content">
 							<h1>
-								Frankfurtská burza <br>
-								ožívá
+								Nová pravidla pro <br>
+								řidičský a technický <br>
+								průkaz
 							</h1>
 
-							<a n:href="News:frankfurtskaBurza" class="button button--blue">Číst dál</a>
+							<a n:href="News:ridicskyPrukaz" class="button button--blue">Číst dál</a>
+						</span>
+					</span>
+				</span>
+				<span class="news__item">
+					<span class="news__inner">
+						<img class="news__image" src="{$basePath}/www/assets/images/content/news/tiles/rodicovska-davka.png" alt="">
+						<span class="news__content">
+							<h1>
+								Rodičovská dávka vzrostla
+							</h1>
+
+							<a n:href="News:rodicovskaDavka" class="button button--blue">Číst dál</a>
 						</span>
 					</span>
 				</span>
