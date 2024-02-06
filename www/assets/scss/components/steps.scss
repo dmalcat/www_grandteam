@@ -2,12 +2,25 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    @include max940px {
+        justify-content: center;
+        flex-flow: row wrap;
+        gap: 4rem;
+    }
+
     .steps__item {
         position: relative;
         display: flex;
         flex-direction: column;
         width: calc(25% - 2rem);
         align-items: center;
+        @include max940px {
+            width: calc(50% - 4rem);
+        }
+
+        @include max640px {
+            width: calc(100% - 4rem);
+        }
     }
 
     .steps__item--1 {
@@ -66,6 +79,12 @@
         }
     }
 
+    .steps__desc {
+        @include max940px {
+            width: 100%;
+        }
+    }
+
     .steps__number {
         position: relative;
         display: flex;
@@ -80,6 +99,12 @@
         margin-bottom: 3rem;
         border-radius: 50%;
         white-space: nowrap;
+        @include max640px {
+            width: 100px;
+            height: 100px;
+            font-size: 45px;
+        }
+        
         .steps__numberIn {
             position: absolute;
             left: -5px; right: -5px; top: -5px; bottom: -5px;

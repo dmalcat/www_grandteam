@@ -2,6 +2,9 @@
 
 section {
 	margin-bottom: $section-gutter;
+	@include max640px {
+		margin-bottom: 60px;	
+	}
 }
 
 .wrapper {

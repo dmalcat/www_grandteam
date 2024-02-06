@@ -2,6 +2,10 @@
 
 .articles {
 	padding-top: 120px;
+	@include max640px {
+		padding-top: 60px;
+	}
+
 	.articles__row {
 		flex-flow: unset;
 		margin-bottom: 20px;
@@ -53,6 +57,10 @@
 			padding: 45px 90px;
 			@include max940px {
 				padding: 30px;	
+			}
+
+			@include max640px {
+				padding: 15px;
 			}
 		}
 	}
